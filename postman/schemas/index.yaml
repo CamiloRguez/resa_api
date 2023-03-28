@@ -527,20 +527,20 @@ paths:
                                         type: array 
                                         items:
                                           $ref: '#/components/schemas/BookingsList'
-                                  example:
-                                    bookings:
-                                      - id: '301000802'
-                                        residenceId: '3070'
-                                        residenceName: San Mamés
-                                        status: reservation_request_approved
-                                        from: '2023-02-09'
-                                        to: '2023-07-09'
-                                      - id: '301000803'
-                                        residenceId: '3070'
-                                        residenceName: San Mamés
-                                        status: finished
-                                        from: '2022-02-09'
-                                        to: '2022-07-09'
+                                    example:
+                                      bookings:
+                                        - id: '301000802'
+                                          residenceId: '3070'
+                                          residenceName: San Mamés
+                                          status: reservation_request_approved
+                                          from: '2023-02-09'
+                                          to: '2023-07-09'
+                                        - id: '301000803'
+                                          residenceId: '3070'
+                                          residenceName: San Mamés
+                                          status: finished
+                                          from: '2022-02-09'
+                                          to: '2022-07-09'
                                         
 
                     description: Successful operation
