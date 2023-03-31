@@ -5670,6 +5670,15 @@ components:
                 residenceId:
                     type: string
                     example: 3073
+                residenceName:
+                    type: string
+                    example: RESA Patacona
+                residenceAddress:
+                    type: string
+                    example: Paseo Serra d’Espadà, 2
+                residencePhone:
+                    type: string
+                    example: 93 508 46 00
                 payments:
                     type: array
                     items: 
@@ -5766,6 +5775,29 @@ components:
                       name:
                           type: string
                           example: Estudio Individual
+                      price:
+                          type: number
+                          example: 900
+                      services:
+                          type: array
+                          items:
+                              type: object
+                              properties:
+                                  id:
+                                      type: string
+                                      example: SER0001
+                                  order:
+                                      type: number
+                                      example: 1
+                                  name:
+                                      type: string
+                                      example: Limpieza semanal
+                                  slug:
+                                      type: string
+                                      example: cleaning
+                                  price:
+                                      type: number
+                                      example: 50
                       media:
                           $ref: '#/components/schemas/MediaType'                        
         BookingsList:
