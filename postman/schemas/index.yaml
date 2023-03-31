@@ -5673,6 +5673,9 @@ components:
                 residenceName:
                     type: string
                     example: RESA Patacona
+                residenceCity:
+                    type: string
+                    example: Alboraya
                 residenceAddress:
                     type: string
                     example: Paseo Serra d’Espadà, 2
