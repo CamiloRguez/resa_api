@@ -167,7 +167,7 @@ paths:
                                     - properties:
                                         result:
                                             $ref: '#/components/schemas/User'
-    '/users/udpate':
+    '/users/update':
         put:
           tags:
               - users
