@@ -379,74 +379,6 @@
 			"name": "users",
 			"item": [
 				{
-					"name": "findUser",
-					"id": "3f881ee7-6dc0-440c-a26f-11d968f964bc",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [
-							{
-								"description": "(Required) ",
-								"key": "Accept-Language",
-								"value": "<string>"
-							},
-							{
-								"key": "Accept",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/users/find",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"users",
-								"find"
-							]
-						}
-					},
-					"response": [
-						{
-							"id": "48086312-9012-4877-8d96-e22bc0982a7e",
-							"name": "Successful operation",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"description": "(Required) ",
-										"key": "Accept-Language",
-										"value": "<string>"
-									}
-								],
-								"url": {
-									"raw": "{{baseUrl}}/users/find",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"users",
-										"find"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								}
-							],
-							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"EQ\",\n    \"language\": \"CF\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"GI\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  }\n}"
-						}
-					]
-				},
-				{
 					"name": "checkIfUserExists",
 					"id": "e1a01190-ded7-4754-9cbf-365a3bf9db01",
 					"protocolProfileBehavior": {
@@ -569,7 +501,7 @@
 					]
 				},
 				{
-					"name": "Returns list of documents",
+					"name": "Returns list of notices",
 					"id": "a9501f78-b207-455f-8b28-e88281e770bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -3445,13 +3377,1595 @@
 			],
 			"id": "16a0db23-2350-43ff-8fbf-071737f20885",
 			"description": "<description>"
+		},
+		{
+			"name": "Returns extras availables",
+			"id": "7c22e113-1765-4344-8708-ea1834243457",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/residences/extras/find/:residenceId/:startDate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"residences",
+						"extras",
+						"find",
+						":residenceId",
+						":startDate"
+					],
+					"variable": [
+						{
+							"key": "residenceId",
+							"value": "8918"
+						},
+						{
+							"key": "startDate",
+							"value": "7518-49-64"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e29cdfbe-1a16-42f8-b6ab-efdb0e211b2f",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/extras/find/:residenceId/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"extras",
+								"find",
+								":residenceId",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "residenceId"
+								},
+								{
+									"key": "startDate"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"aute ut ad\",\n  \"error_details\": \"qui sunt\",\n  \"error_message\": \"magna sit culpa commodo\",\n  \"result\": {\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      }\n    ]\n  }\n}"
+				},
+				{
+					"id": "a51c8135-0746-483b-ba04-ddcfea00061d",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/extras/find/:residenceId/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"extras",
+								"find",
+								":residenceId",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "residenceId"
+								},
+								{
+									"key": "startDate"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"laboris nulla\",\n  \"timestamp\": \"enim tempor dolor\",\n  \"error_details\": \"fugiat\",\n  \"error_message\": \"ex amet dolore\",\n  \"result\": {}\n}"
+				}
+			]
+		},
+		{
+			"name": "Return receipts",
+			"id": "25c83d32-0cfc-46be-928d-32162c33e00e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"bookings",
+						"receipts",
+						"find",
+						":bookingId",
+						":residenceId"
+					],
+					"variable": [
+						{
+							"key": "bookingId",
+							"value": "<string>"
+						},
+						{
+							"key": "residenceId",
+							"value": "<string>"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "747ca3d2-ae6f-4c4f-9ca4-ab8ec44cee75",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"receipts",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId"
+								},
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"anim quis\",\n  \"error_details\": \"culpa laboris sed quis\",\n  \"error_message\": \"ipsum dolore est exe\",\n  \"result\": {\n    \"receipts\": [\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": -35280489.37303247,\n          \"name\": \"incididunt nulla irure nos\",\n          \"type\": \"ad qui ullamco\",\n          \"url\": \"Excepteur Duis voluptate\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": -28977787.71842283,\n          \"name\": \"ea tempor\",\n          \"type\": \"Ut ullamco nulla enim\",\n          \"url\": \"et veniam irure\"\n        }\n      }\n    ]\n  }\n}"
+				},
+				{
+					"id": "3ca05ba0-6010-48b2-8207-6d7d48de0199",
+					"name": "Bookings not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"receipts",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId"
+								},
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "7a780356-6654-4bf9-8db5-2ddda3e234fd",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"receipts",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId"
+								},
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "find documents for a booking",
+			"id": "c90e15f0-5df1-4664-afb7-d1eaca6010d0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"documents",
+						"find",
+						":bookingId",
+						":residenceId"
+					],
+					"variable": [
+						{
+							"key": "bookingId",
+							"value": "<string>"
+						},
+						{
+							"key": "residenceId",
+							"value": "<string>"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "39ab0a6b-ecc7-46e5-94da-3879874eb6d3",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId"
+								},
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"aliquip sunt ipsum officia\",\n  \"error_details\": \"qui ea\",\n  \"error_message\": \"fugiat ea exercitation\",\n  \"result\": {\n    \"documents\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"required\": \"<boolean>\",\n        \"status\": \"<string>\",\n        \"type\": \"<string>\",\n        \"files\": [\n          {\n            \"order\": 35394781.6223692,\n            \"name\": \"in\",\n            \"type\": \"Duis est tempor ullamco\",\n            \"url\": \"amet id sint\"\n          },\n          {\n            \"order\": -79264135.11415929,\n            \"name\": \"incididunt sit ullamco est quis\",\n            \"type\": \"mollit tempor\",\n            \"url\": \"sint dolor cu\"\n          }\n        ]\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"required\": \"<boolean>\",\n        \"status\": \"<string>\",\n        \"type\": \"<string>\",\n        \"files\": [\n          {\n            \"order\": 31523707.46813649,\n            \"name\": \"Lorem laboris culpa magna\",\n            \"type\": \"sit in veniam id Duis\",\n            \"url\": \"minim ad incididunt\"\n          },\n          {\n            \"order\": 35385020.606628835,\n            \"name\": \"nisi qui sunt\",\n            \"type\": \"exer\",\n            \"url\": \"ex in aute Excepteur\"\n          }\n        ]\n      }\n    ]\n  }\n}"
+				},
+				{
+					"id": "c63cd410-5ef5-4377-b3dd-2e7f1e9e23c6",
+					"name": "Bookings not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId"
+								},
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "6c7cd951-9a84-44fe-a4a4-777474f07c61",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId"
+								},
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "Upload Documents from Residences",
+			"id": "a9f75b29-288f-4490-8c52-4f31273c6d26",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"hostelId\": \"<string>\",\n  \"course\": \"<string>\",\n  \"file\": \"<string>\",\n  \"type\": \"<string>\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/documents/upload",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"documents",
+						"upload"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "653ca4b7-f156-4651-aeb7-d74e4c6e69cf",
+					"name": "Upload of Files",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"hostelId\": \"<string>\",\n  \"course\": \"<string>\",\n  \"file\": \"<string>\",\n  \"type\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/documents/upload",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"upload"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"deserunt laborum cillum\",\n  \"error_details\": \"elit\",\n  \"error_message\": \"adipisicing anim quis\",\n  \"result\": {}\n}"
+				},
+				{
+					"id": "36b52669-bcea-46f2-ae90-6f2f87f69a83",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"hostelId\": \"<string>\",\n  \"course\": \"<string>\",\n  \"file\": \"<string>\",\n  \"type\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/documents/upload",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"upload"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "canCreate",
+			"id": "537dcedd-5930-441c-9529-3e8c8b7f5dac",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/users/canCreate/:startDate/:endDate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"canCreate",
+						":startDate",
+						":endDate"
+					],
+					"variable": [
+						{
+							"key": "startDate",
+							"value": "0131-18-13"
+						},
+						{
+							"key": "endDate",
+							"value": "0131-18-13"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "77d40207-bcdb-4cd2-9ce4-cfbcdead43f5",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/canCreate/:startDate/:endDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"canCreate",
+								":startDate",
+								":endDate"
+							],
+							"variable": [
+								{
+									"key": "startDate"
+								},
+								{
+									"key": "endDate"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"laborum in pariatur\",\n  \"error_details\": \"amet elit labore tempor\",\n  \"error_message\": \"exercitation est\",\n  \"result\": {\n    \"canCreate\": \"<boolean>\"\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "change all notice status",
+			"id": "7c1810dd-89c8-4dd3-85af-5da65d58cdf6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/users/notices",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"notices"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "cefdc95b-5d5c-4bfb-85b6-5b0f1b1aed08",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"sit\",\n  \"error_details\": \"ex\",\n  \"error_message\": \"est\",\n  \"result\": {}\n}"
+				},
+				{
+					"id": "3ed6d2aa-ba3e-4c75-bf3f-9d4caee6ff1a",
+					"name": "Notices not found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "73c570c3-6087-4918-877b-848a28f1240c",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "change notice status",
+			"id": "01636a48-2ab8-46ab-8d2a-2a98b1902056",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/users/notices/:noticeId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"notices",
+						":noticeId"
+					],
+					"variable": [
+						{
+							"key": "noticeId",
+							"value": "<string>"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "e9bcc998-d05e-4d5a-b02e-b62f71a6ec28",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices/:noticeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices",
+								":noticeId"
+							],
+							"variable": [
+								{
+									"key": "noticeId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"sit\",\n  \"error_details\": \"ex\",\n  \"error_message\": \"est\",\n  \"result\": {}\n}"
+				},
+				{
+					"id": "e7805a1f-640b-4909-8d0a-d08165ae9d88",
+					"name": "Notices not found",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices/:noticeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices",
+								":noticeId"
+							],
+							"variable": [
+								{
+									"key": "noticeId"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "890e9911-611d-4b7f-b3da-07d5bf0bc98e",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices/:noticeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices",
+								":noticeId"
+							],
+							"variable": [
+								{
+									"key": "noticeId"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "Returns list of incidences",
+			"id": "033fb03b-1a00-4524-a99d-1b3c27d077de",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/users/incidences/:startDate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"incidences",
+						":startDate"
+					],
+					"variable": [
+						{
+							"key": "startDate",
+							"value": "0131-18-13"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "24e15661-bf63-408a-9270-be862b904966",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "startDate"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"nostrud occaecat fugiat eu\",\n  \"error_details\": \"ipsum velit officia mollit\",\n  \"error_message\": \"cupidatat sunt\",\n  \"result\": {\n    \"incidences\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"7488-96-96T30:54:32-06:99\",\n        \"status\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"4795-84-26T54:45:44+57:24\",\n        \"status\": \"<string>\"\n      }\n    ]\n  }\n}"
+				},
+				{
+					"id": "0d83334e-0581-487e-bdb9-f07d109f6a8b",
+					"name": "Incidences not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "startDate"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "81b51e2e-0a15-44ec-9d4c-015cab2aa7f1",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "startDate"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "Create an incidence",
+			"id": "57372bfd-8228-4f80-8f1f-e9682ef7ccea",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+					"options": {
+						"raw": {
+							"headerFamily": "json",
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/users/incidences",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"incidences"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "91cb006f-e93e-4b11-b747-026a10f3bd9d",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"sit\",\n  \"error_details\": \"ex\",\n  \"error_message\": \"est\",\n  \"result\": {}\n}"
+				},
+				{
+					"id": "5d207822-1ab5-4bb8-a9e5-8e1048e55b48",
+					"name": "Incidences not found",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				},
+				{
+					"id": "c60621ce-4c8d-4f1e-b8f0-1a9d3df17450",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [],
+					"cookie": []
+				}
+			]
+		},
+		{
+			"name": "isRenewer",
+			"id": "fd5970b0-5e88-468b-b913-92d2d3d3dc1f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/residences/isRenewer/:residenceId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"residences",
+						"isRenewer",
+						":residenceId"
+					],
+					"variable": [
+						{
+							"key": "residenceId",
+							"value": "<string>"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "a4063f32-82a0-4566-a480-6ebb9564d92f",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/isRenewer/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"isRenewer",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "residenceId"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"adipisicing\",\n  \"error_details\": \"Duis dolor cillum occaecat incididunt\",\n  \"error_message\": \"nisi mollit labore anim\",\n  \"result\": {\n    \"isRenewer\": \"<boolean>\",\n    \"seniority\": \"<number>\"\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "validateZipcode",
+			"id": "c947cfc6-796b-4a0f-b8a2-e0edaaa46042",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/master-data/regions/validateZipcode/:regionId/:zipcode",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"master-data",
+						"regions",
+						"validateZipcode",
+						":regionId",
+						":zipcode"
+					],
+					"variable": [
+						{
+							"key": "regionId",
+							"value": "<string>"
+						},
+						{
+							"key": "zipcode",
+							"value": "<string>"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "052e62d5-7dac-4515-a691-4f541c0124d3",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/regions/validateZipcode/:regionId/:zipcode",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"regions",
+								"validateZipcode",
+								":regionId",
+								":zipcode"
+							],
+							"variable": [
+								{
+									"key": "regionId"
+								},
+								{
+									"key": "zipcode"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"tempor laboris\",\n  \"error_details\": \"consectetur labore aute do Excepteur\",\n  \"error_message\": \"nisi id\",\n  \"result\": {\n    \"isValid\": \"<boolean>\"\n  }\n}"
+				}
+			]
+		},
+		{
+			"name": "Returns all incidence types",
+			"id": "6ce2074a-5041-411b-9d37-c5461917d6ee",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"description": "(Required) ",
+						"key": "Accept-Language",
+						"value": "<string>"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/master-data/incidences/findAll",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"master-data",
+						"incidences",
+						"findAll"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "fc11fe5e-3c46-43ad-a8a4-9578c777496a",
+					"name": "Successful operation",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/incidences/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"incidences",
+								"findAll"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"Lorem id magna labore\",\n  \"error_details\": \"dolor Lorem elit\",\n  \"error_message\": \"mollit quis Ut\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+				},
+				{
+					"id": "11debe62-6b1c-4dfd-b127-8f50da1d069a",
+					"name": "Internal Server Error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/incidences/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"incidences",
+								"findAll"
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"status\": \"ex\",\n  \"timestamp\": \"fugiat\",\n  \"error_details\": \"veniam adipisicing velit voluptate\",\n  \"error_message\": \"in sunt dolore sit\",\n  \"result\": {}\n}"
+				}
+			]
 		}
 	],
 	"variable": [
 		{
 			"id": "872b8b5f-1d92-4670-8193-0e6fd382735a",
 			"key": "baseUrl",
-			"value": "https://pre.resa.es/api/v1"
+			"value": "https://pre.resa.es/api/v1",
+			"type": "string"
 		}
 	]
 }
