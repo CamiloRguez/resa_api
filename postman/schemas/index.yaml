@@ -4,7 +4,7 @@ info:
     version: '1.0'
     description: <description>
 servers:
-    - url: 'https://resa-pre-backend.azurewebsites.net/api/v1'
+    - url: 'https://pre.resa.es/api/v1'
 paths:
     /auth/recovery-password:
       post:
@@ -5357,17 +5357,17 @@ paths:
                                                       example: Estudiante
                                           example:
                                               - id: '010'
-                                                slug: Estudiante
-                                                name: student
+                                                name: Estudiante
+                                                slug: student
                                               - id: '020'
-                                                slug: Profesor
-                                                name: teacher
+                                                name: Profesor
+                                                slug: teacher
                                               - id: '040'
-                                                slug: Investigador
-                                                name: researchers
+                                                name: Investigador
+                                                slug: researchers
                                               - id: '999'
-                                                slug: Otro
-                                                name: other
+                                                name: Otro
+                                                slug: other
                     description: Successful operation
                 '500':
                     description: Internal Server Error
