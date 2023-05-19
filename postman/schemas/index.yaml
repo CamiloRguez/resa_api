@@ -17,6 +17,7 @@ paths:
           required: true
           schema:
             type: string
+          example: es-ES
         requestBody:
           content:
             application/json:
@@ -111,6 +112,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
               -
                 name: startDate
                 description: Start date selected by user
@@ -156,6 +158,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
             responses:
                 '200':
                     description: Successful operation
@@ -177,6 +180,7 @@ paths:
               required: true
               schema:
                 type: string
+              example: es-ES
           requestBody: 
             content:
               application/json:
@@ -206,6 +210,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
               -
                 name: criteria
                 description: Email/DNI/NIE/Passport
@@ -248,6 +253,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
             requestBody: 
               content:
                 application/json:
@@ -284,6 +290,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
             responses:
                 '200':
                     content:
@@ -365,6 +372,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
               -
                 name: noticeId
                 description: ID of notice
@@ -406,6 +414,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
               -
                 name: startDate
                 description: Start date of booking
@@ -472,6 +481,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
             requestBody:
                 content:
                     application/json:
@@ -529,6 +539,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
               -
                 name: residenceId
                 description: residenceId
@@ -575,6 +586,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -607,6 +619,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
                 -
                     name: residenceId
                     description: ID of residence
@@ -673,6 +686,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
                 -
                     name: residenceId
                     description: ID of residence
@@ -739,6 +753,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
                 -
                     name: residenceId
                     description: ID of residence
@@ -837,6 +852,7 @@ paths:
                     required: true
                     schema:
                       type: string
+                    example: es-ES
                  -
                     name: bookingId
                     schema:
@@ -920,6 +936,7 @@ paths:
                     required: true
                     schema:
                       type: string
+                    example: es-ES
                  -
                     name: bookingId
                     schema:
@@ -986,6 +1003,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
              -
                 name: bookingId
                 schema:
@@ -1137,11 +1155,14 @@ paths:
                     in: path
                     required: true
                     example: 0000301000804
-               - name: Accept-Language
-                 in: header
-                 required: true
-                 schema:
-                  type: string
+               -  name: Accept-Language
+                  in: header
+                  required: true
+                  schema:
+                    type: string
+                  example: es-ES
+                
+                
             responses:
         
                 '200':
@@ -1176,6 +1197,7 @@ paths:
                 required: true
                 schema:
                   type: string
+                example: es-ES
               -
                 name: regionId
                 description: regionId
@@ -1218,6 +1240,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -2004,6 +2027,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -2790,6 +2814,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
                 -
                     name: countryname
                     description: name of countryname
@@ -2815,169 +2840,169 @@ paths:
                                           items:
                                               type: object
                                               properties:
-                                                  name:
+                                                  id:
                                                       type: string
                                                       example: '01'
-                                                  id:
+                                                  name:
                                                       type: string
                                                       example: Huelva
                                           example:
-                                              - name: '01'
+                                              - id: '01'
                                                 slug: ''
-                                                id: Alava
-                                              - name: '02'
+                                                name: Alava
+                                              - id: '02'
                                                 slug: ''
-                                                id: Albacete
-                                              - name: '03'
+                                                name: Albacete
+                                              - id: '03'
                                                 slug: ''
-                                                id: Alicante
-                                              - name: '04'
+                                                name: Alicante
+                                              - id: '04'
                                                 slug: ''
-                                                id: Almería
-                                              - name: '05'
+                                                name: Almería
+                                              - id: '05'
                                                 slug: ''
-                                                id: Avila
-                                              - name: '06'
+                                                name: Avila
+                                              - id: '06'
                                                 slug: ''
-                                                id: Badajoz
-                                              - name: '07'
+                                                name: Badajoz
+                                              - id: '07'
                                                 slug: ''
-                                                id: Baleares
-                                              - name: '08'
+                                                name: Baleares
+                                              - id: '08'
                                                 slug: ''
-                                                id: Barcelona
-                                              - name: '09'
+                                                name: Barcelona
+                                              - id: '09'
                                                 slug: ''
-                                                id: Burgos
-                                              - name: '10'
+                                                name: Burgos
+                                              - id: '10'
                                                 slug: ''
-                                                id: Cáceres
-                                              - name: '11'
+                                                name: Cáceres
+                                              - id: '11'
                                                 slug: ''
-                                                id: Cadiz
-                                              - name: '12'
+                                                name: Cadiz
+                                              - id: '12'
                                                 slug: ''
-                                                id: Castellón
-                                              - name: '13'
+                                                name: Castellón
+                                              - id: '13'
                                                 slug: ''
-                                                id: Ciudad Real
-                                              - name: '14'
+                                                name: Ciudad Real
+                                              - id: '14'
                                                 slug: ''
-                                                id: Córdoba
-                                              - name: '15'
+                                                name: Córdoba
+                                              - id: '15'
                                                 slug: ''
-                                                id: La Coruña
-                                              - name: '16'
+                                                name: La Coruña
+                                              - id: '16'
                                                 slug: ''
-                                                id: Cuenca
-                                              - name: '17'
+                                                name: Cuenca
+                                              - id: '17'
                                                 slug: ''
-                                                id: Gerona
-                                              - name: '18'
+                                                name: Gerona
+                                              - id: '18'
                                                 slug: ''
-                                                id: Granada
-                                              - name: '19'
+                                                name: Granada
+                                              - id: '19'
                                                 slug: ''
-                                                id: Guadalajara
-                                              - name: '20'
+                                                name: Guadalajara
+                                              - id: '20'
                                                 slug: ''
-                                                id: Guipúzcoa
-                                              - name: '21'
+                                                name: Guipúzcoa
+                                              - id: '21'
                                                 slug: ''
-                                                id: Huelva
-                                              - name: '22'
+                                                name: Huelva
+                                              - id: '22'
                                                 slug: ''
-                                                id: Huesca
-                                              - name: '23'
+                                                name: Huesca
+                                              - id: '23'
                                                 slug: ''
-                                                id: Jaén
-                                              - name: '24'
+                                                name: Jaén
+                                              - id: '24'
                                                 slug: ''
-                                                id: León
-                                              - name: '25'
+                                                name: León
+                                              - id: '25'
                                                 slug: ''
-                                                id: Lérnamea
-                                              - name: '26'
+                                                name: Lérida
+                                              - id: '26'
                                                 slug: ''
-                                                id: La Rioja
-                                              - name: '27'
+                                                name: La Rioja
+                                              - id: '27'
                                                 slug: ''
-                                                id: Lugo
-                                              - name: '28'
+                                                name: Lugo
+                                              - id: '28'
                                                 slug: ''
-                                                id: Madrname
-                                              - name: '29'
+                                                name: Madrid
+                                              - id: '29'
                                                 slug: ''
-                                                id: Málaga
-                                              - name: '30'
+                                                name: Málaga
+                                              - id: '30'
                                                 slug: ''
-                                                id: Murcia
-                                              - name: '31'
+                                                name: Murcia
+                                              - id: '31'
                                                 slug: ''
-                                                id: Navarra
-                                              - name: '32'
+                                                name: Navarra
+                                              - id: '32'
                                                 slug: ''
-                                                id: Orense
-                                              - name: '33'
+                                                name: Orense
+                                              - id: '33'
                                                 slug: ''
-                                                id: Asturias
-                                              - name: '34'
+                                                name: Asturias
+                                              - id: '34'
                                                 slug: ''
-                                                id: Palencia
-                                              - name: '35'
+                                                name: Palencia
+                                              - id: '35'
                                                 slug: ''
-                                                id: Las Palmas
-                                              - name: '36'
+                                                name: Las Palmas
+                                              - id: '36'
                                                 slug: ''
-                                                id: Pontevedra
-                                              - name: '37'
+                                                name: Pontevedra
+                                              - id: '37'
                                                 slug: ''
-                                                id: Salamanca
-                                              - name: '38'
+                                                name: Salamanca
+                                              - id: '38'
                                                 slug: ''
-                                                id: Sta. Cruz Tenerife
-                                              - name: '39'
+                                                name: Sta. Cruz Tenerife
+                                              - id: '39'
                                                 slug: ''
-                                                id: Cantabria
-                                              - name: '40'
+                                                name: Cantabria
+                                              - id: '40'
                                                 slug: ''
-                                                id: Segovia
-                                              - name: '41'
+                                                name: Segovia
+                                              - id: '41'
                                                 slug: ''
-                                                id: Sevilla
-                                              - name: '42'
+                                                name: Sevilla
+                                              - id: '42'
                                                 slug: ''
-                                                id: Soria
-                                              - name: '43'
+                                                name: Soria
+                                              - id: '43'
                                                 slug: ''
-                                                id: Tarragona
-                                              - name: '44'
+                                                name: Tarragona
+                                              - id: '44'
                                                 slug: ''
-                                                id: Teruel
-                                              - name: '45'
+                                                name: Teruel
+                                              - id: '45'
                                                 slug: ''
-                                                id: Toledo
-                                              - name: '46'
+                                                name: Toledo
+                                              - id: '46'
                                                 slug: ''
-                                                id: Valencia
-                                              - name: '47'
+                                                name: Valencia
+                                              - id: '47'
                                                 slug: ''
-                                                id: Valladolname
-                                              - name: '48'
+                                                name: Valladolid
+                                              - id: '48'
                                                 slug: ''
-                                                id: Vizcaya
-                                              - name: '49'
+                                                name: Vizcaya
+                                              - id: '49'
                                                 slug: ''
-                                                id: Zamora
-                                              - name: '50'
+                                                name: Zamora
+                                              - id: '50'
                                                 slug: ''
-                                                id: Zaragoza
-                                              - name: '51'
+                                                name: Zaragoza
+                                              - id: '51'
                                                 slug: ''
-                                                id: Ceuta
-                                              - name: '52'
+                                                name: Ceuta
+                                              - id: '52'
                                                 slug: ''
-                                                id: Melilla
+                                                name: Melilla
                     description: Successful operation
                 '500':
                     description: Internal Server Error
@@ -2998,6 +3023,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -3049,6 +3075,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -4702,6 +4729,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -4754,6 +4782,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -5247,6 +5276,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -5299,6 +5329,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -5357,6 +5388,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -5430,6 +5462,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -5482,6 +5515,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -5552,6 +5586,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
                 -
                     name: regionId
                     description: ID of region
@@ -5814,6 +5849,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
                 -
                     name: regionId
                     description: ID of region
@@ -6036,6 +6072,7 @@ paths:
                   required: true
                   schema:
                     type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -6913,6 +6950,9 @@ components:
                             order:
                                 type: number
                                 example: 1
+                            number:
+                              type: string
+                              example: HA01
                 promoCodes:
                     type: array
                     items: {}
