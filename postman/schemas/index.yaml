@@ -17,7 +17,7 @@ paths:
           required: true
           schema:
             type: string
-            default: es-ES
+            example: es-ES
         requestBody:
           content:
             application/json:
@@ -112,7 +112,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
               -
                 name: startDate
                 description: Start date selected by user
@@ -158,7 +158,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
             responses:
                 '200':
                     description: Successful operation
@@ -180,7 +180,7 @@ paths:
               required: true
               schema:
                 type: string
-                default: es-ES
+                example: es-ES
           requestBody: 
             content:
               application/json:
@@ -210,7 +210,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
               -
                 name: criteria
                 description: Email/DNI/NIE/Passport
@@ -253,7 +253,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
             requestBody: 
               content:
                 application/json:
@@ -290,7 +290,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
             responses:
                 '200':
                     content:
@@ -372,7 +372,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
               -
                 name: noticeId
                 description: ID of notice
@@ -414,7 +414,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
               -
                 name: startDate
                 description: Start date of booking
@@ -481,7 +481,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
             requestBody:
                 content:
                     application/json:
@@ -539,7 +539,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
               -
                 name: residenceId
                 description: residenceId
@@ -586,7 +586,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -619,7 +619,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 -
                     name: residenceId
                     description: ID of residence
@@ -686,7 +686,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 -
                     name: residenceId
                     description: ID of residence
@@ -753,7 +753,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 -
                     name: residenceId
                     description: ID of residence
@@ -852,7 +852,7 @@ paths:
                     required: true
                     schema:
                       type: string
-                      default: es-ES
+                      example: es-ES
                  -
                     name: bookingId
                     schema:
@@ -936,7 +936,7 @@ paths:
                     required: true
                     schema:
                       type: string
-                      default: es-ES
+                      example: es-ES
                  -
                     name: bookingId
                     schema:
@@ -1003,7 +1003,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
              -
                 name: bookingId
                 schema:
@@ -1160,7 +1160,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 
                 
             responses:
@@ -1197,7 +1197,7 @@ paths:
                 required: true
                 schema:
                   type: string
-                  default: es-ES
+                  example: es-ES
               -
                 name: regionId
                 description: regionId
@@ -1240,7 +1240,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -2027,7 +2027,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -2814,7 +2814,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 -
                     name: countryname
                     description: name of countryname
@@ -3023,7 +3023,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -3075,7 +3075,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -4729,7 +4729,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -4782,7 +4782,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -5276,7 +5276,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -5329,7 +5329,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -5388,7 +5388,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -5462,7 +5462,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -5515,7 +5515,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
@@ -5586,7 +5586,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 -
                     name: regionId
                     description: ID of region
@@ -5849,7 +5849,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
                 -
                     name: regionId
                     description: ID of region
@@ -6072,7 +6072,7 @@ paths:
                   required: true
                   schema:
                     type: string
-                    default: es-ES
+                    example: es-ES
             responses:
                 '200':
                     content:
