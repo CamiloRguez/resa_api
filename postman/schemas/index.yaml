@@ -4,7 +4,7 @@ info:
     version: '1.0'
     description: <description>
 servers:
-    - url: 'https://pre.resa.es/api/v1'
+    - url: 'https://resa-pre-backend.azurewebsites.net/api/v1'
 paths:
     /auth/recovery-password:
       post:
