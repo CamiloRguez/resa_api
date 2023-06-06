@@ -83,10 +83,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/LoginRequest'
-              example: 
-                email: "test@email.es"
-                password: "123456"
-                rememberMe: true
           required: true
         responses:
           "200":
@@ -6240,6 +6236,10 @@ components:
             rememberMe:
               type: boolean
               example: true
+          example: 
+            email: "test@email.es"
+            password: "123456"
+            rememberMe: true
         
         Booking:
             type: object
