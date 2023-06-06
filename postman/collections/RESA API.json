@@ -1,0 +1,5596 @@
+{
+	"info": {
+		"_postman_id": "82194067-35af-4308-9605-d590fa59c9ba",
+		"name": "RESA API",
+		"description": "<description>",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "26009284-82194067-35af-4308-9605-d590fa59c9ba"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "recoveryPassword",
+					"id": "5fb38612-6c59-4eb2-bf3f-5aef9b2fa20a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/recovery-password",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"recovery-password"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "4b34ce6e-c3de-4476-8bb7-e3c9ea1c489f",
+							"name": "Send and email for password recover",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/recovery-password",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"recovery-password"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						},
+						{
+							"id": "c316996d-9de8-43fa-9225-587d428cf0a2",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/recovery-password",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"recovery-password"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"id": "c85f508a-8002-47d7-9168-4b4623809be2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"<string>\",\n  \"token\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "c815926f-8ff6-48b8-90e5-bc6ca4af206c",
+							"name": "Send and email for password recover",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"token\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"userId\": \"<string>\",\n    \"token\": \"<string>\"\n  }\n}"
+						},
+						{
+							"id": "ac627545-4e5c-4477-9652-c6453370dbc1",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"token\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "login",
+					"id": "fc7895b8-c5e0-42e1-b375-01ea7e0287a9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"rememberMe\": \"<boolean>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b8839320-ef1d-43cf-9af9-02456f1b0d36",
+							"name": "Login a valid user",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"rememberMe\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"token\": \"<string>\",\n    \"userId\": \"<string>\"\n  }\n}"
+						}
+					]
+				}
+			],
+			"id": "76e35ae3-6b7d-4d7b-8611-2e8c93a32ccd",
+			"description": "<description>"
+		},
+		{
+			"name": "documents",
+			"item": [
+				{
+					"name": "find documents for a booking",
+					"id": "aa28381e-4577-4509-a71d-692ac64c0fc3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId",
+									"value": "<string>"
+								},
+								{
+									"key": "residenceId",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "00b6dc60-0fb5-43ce-ba85-abbfcb015dfa",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"documents",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"documents\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"required\": \"<boolean>\",\n        \"status\": \"<string>\",\n        \"type\": \"<string>\",\n        \"files\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ]\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"required\": \"<boolean>\",\n        \"status\": \"<string>\",\n        \"type\": \"<string>\",\n        \"files\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ]\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "1fb935e8-15ca-41cb-86fb-3aeab43a0443",
+							"name": "Bookings not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"documents",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "1a7bd292-6987-46c0-905f-4fadc33f4122",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/documents/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"documents",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Upload Documents from Residences",
+					"id": "5e3def9e-0385-40c5-943a-90958e02ecbb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"hostelId\": \"<string>\",\n  \"course\": \"<string>\",\n  \"file\": \"<string>\",\n  \"type\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/documents/upload",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"documents",
+								"upload"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "c4daa0d4-661f-4be4-91b8-25c451d60f44",
+							"name": "Upload of Files",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"hostelId\": \"<string>\",\n  \"course\": \"<string>\",\n  \"file\": \"<string>\",\n  \"type\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/documents/upload",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"documents",
+										"upload"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						},
+						{
+							"id": "fc8ce287-56e6-48ac-a0ba-9cf468745371",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"userId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"hostelId\": \"<string>\",\n  \"course\": \"<string>\",\n  \"file\": \"<string>\",\n  \"type\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/documents/upload",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"documents",
+										"upload"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				}
+			],
+			"id": "12681041-c072-42a9-b063-7e388ad567bb",
+			"description": "<description>"
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "canCreate",
+					"id": "efc67f84-004d-4ac6-8281-06afbfdb4ca7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/canCreate/:startDate/:endDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"canCreate",
+								":startDate",
+								":endDate"
+							],
+							"variable": [
+								{
+									"key": "startDate",
+									"value": "4489-29-48"
+								},
+								{
+									"key": "endDate",
+									"value": "4489-29-48"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "5947ddd2-c22b-41ad-81f2-8bcced41c08c",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/canCreate/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"canCreate",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "startDate"
+										},
+										{
+											"key": "endDate"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"canCreate\": \"<boolean>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "findUser",
+					"id": "99fe0323-0964-4390-9d21-8b055576cc2a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/find",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"find"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "4f5653db-d06a-4261-81b9-19cb45a78319",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/find",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"find"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"image\": \"<string>\",\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"PD\",\n    \"language\": \"PP\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"QA\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "update an user",
+					"id": "1d58a42d-ea79-499d-882d-a729d4b37262",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"NZ\",\n  \"language\": \"SQ\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"ZD\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/update",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "6b963464-7324-43a8-8f35-1dd51f2815a1",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"NZ\",\n  \"language\": \"SQ\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"ZD\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						},
+						{
+							"id": "e7405643-5bd7-49de-b9b7-fda217ce7316",
+							"name": "User not updated",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"NZ\",\n  \"language\": \"SQ\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"ZD\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"update"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "55d74baf-3d95-4071-8188-4b04da1b4b45",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"NZ\",\n  \"language\": \"SQ\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"ZD\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/update",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"update"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "checkIfUserExists",
+					"id": "29af379f-19e1-464e-bf35-e86b369b561c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/exists/:criteria",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"exists",
+								":criteria"
+							],
+							"variable": [
+								{
+									"key": "criteria",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "39c4c180-b712-4949-92fc-171f870ce32c",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/exists/:criteria",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"exists",
+										":criteria"
+									],
+									"variable": [
+										{
+											"key": "criteria"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"exists\": \"<boolean>\"\n  }\n}"
+						},
+						{
+							"id": "cc64b5a7-9b44-457b-9549-5955391ab177",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/exists/:criteria",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"exists",
+										":criteria"
+									],
+									"variable": [
+										{
+											"key": "criteria"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "change all notice status",
+					"id": "217b77ab-f9a8-426e-b0da-ab8bba7851e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n    \"id\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\"\n  }\n]",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/notices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "3e399df0-eb0d-4cd5-9afd-41a306369568",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\"\n  }\n]",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/notices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						},
+						{
+							"id": "59a3314a-d36c-4b98-b4d2-14d8f6b213a2",
+							"name": "Notices not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\"\n  }\n]",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/notices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "6d1c7022-65e3-48fa-b96b-ba3c42cc504d",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "[\n  {\n    \"id\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\"\n  }\n]",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/notices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Returns list of notices",
+					"id": "297cad57-5116-48ab-8926-33417b64fa2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/notices",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "32307414-ab96-4e7a-8f39-5cfa619ec9ea",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/notices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"notices\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"date\": \"<string>\",\n        \"readed\": \"<boolean>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"date\": \"<string>\",\n        \"readed\": \"<boolean>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "438faf32-3d3a-43c8-89a0-c78ca208e8ba",
+							"name": "Notices not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/notices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "f063c398-4635-412f-b24d-dd6e2387c281",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/notices",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "change notice status",
+					"id": "c1c703f8-3de9-4c49-9873-6764724411ba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"readed\": \"<boolean>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/notices/:noticeId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"notices",
+								":noticeId"
+							],
+							"variable": [
+								{
+									"key": "noticeId",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "316c3827-3895-4478-b484-675900d6735c",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"readed\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/notices/:noticeId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices",
+										":noticeId"
+									],
+									"variable": [
+										{
+											"key": "noticeId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						},
+						{
+							"id": "50ec057e-fd66-4e86-9406-c4463db03e12",
+							"name": "Notices not found",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"readed\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/notices/:noticeId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices",
+										":noticeId"
+									],
+									"variable": [
+										{
+											"key": "noticeId"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "8292d141-a4b6-4454-90ea-5a522dfb315b",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"readed\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/notices/:noticeId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"notices",
+										":noticeId"
+									],
+									"variable": [
+										{
+											"key": "noticeId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Returns list of incidences",
+					"id": "1b0a624d-5992-446c-8f72-2c29d4bfa262",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "startDate",
+									"value": "4489-29-48"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1d3691ff-5afc-4905-9bc7-79412b19ff92",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/incidences/:startDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"incidences",
+										":startDate"
+									],
+									"variable": [
+										{
+											"key": "startDate"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"incidences\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"9935-83-77T27:02:43+98:67\",\n        \"status\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"0200-96-55T62:93:17-33:79\",\n        \"status\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "cd25300d-7f76-4993-98c3-a2834c44d550",
+							"name": "Incidences not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/incidences/:startDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"incidences",
+										":startDate"
+									],
+									"variable": [
+										{
+											"key": "startDate"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "92fb9241-05e2-4b6c-b19d-9c8bbd37a324",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/incidences/:startDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"incidences",
+										":startDate"
+									],
+									"variable": [
+										{
+											"key": "startDate"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Create an incidence",
+					"id": "84fb57d8-f9e7-4a61-8511-df6173f15370",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/users/incidences",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"incidences"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "6ba6b648-c584-4668-91ef-5002050156e5",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/incidences",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"incidences"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						},
+						{
+							"id": "7d1fab64-325b-4aab-9090-707a0d29bd04",
+							"name": "Incidences not found",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/incidences",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"incidences"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "3cef01b2-ccce-4da3-9fa1-9794228a4042",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"room\": \"<string>\",\n  \"type\": \"<string>\",\n  \"title\": \"<string>\",\n  \"description\": \"<string>\",\n  \"permission\": \"<boolean>\",\n  \"image\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/incidences",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										"incidences"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				}
+			],
+			"id": "6a6d53da-171b-4485-980e-ccfeb8f6e01c",
+			"description": "<description>"
+		},
+		{
+			"name": "residences",
+			"item": [
+				{
+					"name": "isRenewer",
+					"id": "d10a1ef1-e818-4f89-8cec-aea4c376cdd3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/isRenewer/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"isRenewer",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "residenceId",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "2c8884d0-9ee5-41af-80d7-dad59574dbfe",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/isRenewer/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"isRenewer",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"isRenewer\": \"<boolean>\",\n    \"seniority\": \"<number>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns residence by id",
+					"id": "6a457d50-5023-4ffa-8dfd-200d0d4cfcc4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/find/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"find",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9449"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "5d02ee42-074c-426c-af11-ddf43fd4dd63",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/find/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"find",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"phone\": \"<string>\"\n    },\n    \"agreements\": [\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"universities\": [\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"periods\": {\n      \"intermediate\": [\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"0373\",\n          \"from\": \"3664-55-73\",\n          \"to\": \"0061-02-49\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        },\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"9643\",\n          \"from\": \"0369-90-95\",\n          \"to\": \"3123-29-26\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        }\n      ],\n      \"full\": [\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"2955\",\n          \"from\": \"9661-68-80\",\n          \"to\": \"0188-94-11\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        },\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"4928\",\n          \"from\": \"6355-03-09\",\n          \"to\": \"2602-31-46\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        }\n      ]\n    },\n    \"documents\": [\n      {\n        \"type\": \"<string>\",\n        \"url\": \"<string>\",\n        \"appliedTo\": \"<string>\"\n      },\n      {\n        \"type\": \"<string>\",\n        \"url\": \"<string>\",\n        \"appliedTo\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "b9d87057-c88e-4942-99aa-6dff179e0098",
+							"name": "Residence not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/find/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"find",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "4590de12-680e-4558-b400-6aed5299ff73",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/find/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"find",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns room types by residence id",
+					"id": "7995994f-ad25-48a2-a081-51e436c3dbfa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=true",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"room-types",
+								"findByResidence",
+								":residenceId",
+								":startDate",
+								":endDate"
+							],
+							"query": [
+								{
+									"key": "university",
+									"value": "true"
+								}
+							],
+							"variable": [
+								{
+									"key": "residenceId",
+									"value": "6994"
+								},
+								{
+									"key": "startDate",
+									"value": "4489-29-48"
+								},
+								{
+									"key": "endDate",
+									"value": "4489-29-48"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "5baa7492-22f7-4bbe-a41d-cb521ccb8159",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"room-types",
+										"findByResidence",
+										":residenceId",
+										":startDate",
+										":endDate"
+									],
+									"query": [
+										{
+											"key": "university",
+											"value": "true"
+										}
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										},
+										{
+											"key": "startDate"
+										},
+										{
+											"key": "endDate"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"order\": \"<number>\",\n        \"medias\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ],\n        \"price\": \"<number>\",\n        \"modalities\": [\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"extras\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ]\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"order\": \"<number>\",\n        \"medias\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ],\n        \"price\": \"<number>\",\n        \"modalities\": [\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"extras\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ]\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "b0261b67-fa80-420f-8c70-a204aa069926",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=true",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"room-types",
+										"findByResidence",
+										":residenceId",
+										":startDate",
+										":endDate"
+									],
+									"query": [
+										{
+											"key": "university",
+											"value": "true"
+										}
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										},
+										{
+											"key": "startDate"
+										},
+										{
+											"key": "endDate"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns additional payments and payment methods",
+					"id": "e529bfbc-083e-426d-a6d5-cbb988e0089e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/payments/find/:residenceId/:stayType/:startDate/:endDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"payments",
+								"find",
+								":residenceId",
+								":stayType",
+								":startDate",
+								":endDate"
+							],
+							"variable": [
+								{
+									"key": "residenceId",
+									"value": "6994"
+								},
+								{
+									"key": "stayType",
+									"value": "long"
+								},
+								{
+									"key": "startDate",
+									"value": "4489-29-48"
+								},
+								{
+									"key": "endDate",
+									"value": "4489-29-48"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b2ba5a69-de86-4d61-b5e9-759d01692d30",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/payments/find/:residenceId/:stayType/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"payments",
+										"find",
+										":residenceId",
+										":stayType",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										},
+										{
+											"key": "stayType"
+										},
+										{
+											"key": "startDate"
+										},
+										{
+											"key": "endDate"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"additionalPayments\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"paymentMethods\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "5e783be1-d7a5-48c5-b3e6-22b234a2db2d",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/payments/find/:residenceId/:stayType/:startDate/:endDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"payments",
+										"find",
+										":residenceId",
+										":stayType",
+										":startDate",
+										":endDate"
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										},
+										{
+											"key": "stayType"
+										},
+										{
+											"key": "startDate"
+										},
+										{
+											"key": "endDate"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns extras availables",
+					"id": "6b0938dd-6898-411a-bf5d-4eb1d7f221fa",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/residences/extras/find/:residenceId/:startDate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"residences",
+								"extras",
+								"find",
+								":residenceId",
+								":startDate"
+							],
+							"variable": [
+								{
+									"key": "residenceId",
+									"value": "6994"
+								},
+								{
+									"key": "startDate",
+									"value": "4489-29-48"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "dce1657f-74e1-4aae-88ee-14897dd743a6",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/extras/find/:residenceId/:startDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"extras",
+										"find",
+										":residenceId",
+										":startDate"
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										},
+										{
+											"key": "startDate"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "755be818-8b4d-47e2-9a46-37a1e56dd8e2",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/residences/extras/find/:residenceId/:startDate",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"residences",
+										"extras",
+										"find",
+										":residenceId",
+										":startDate"
+									],
+									"variable": [
+										{
+											"key": "residenceId"
+										},
+										{
+											"key": "startDate"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				}
+			],
+			"id": "920cdd65-bb7d-4eb7-b252-c6b72687b33a",
+			"description": "<description>"
+		},
+		{
+			"name": "bookings",
+			"item": [
+				{
+					"name": "createBooking",
+					"id": "b70f78ad-f6c4-4181-8628-c2cad4962f1e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"6521-02-16\",\n      \"to\": \"2762-74-65\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"IY\",\n    \"language\": \"YB\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"YR\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/bookings/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "79f64f8a-5392-4621-abba-5be8a0a6af9f",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"6521-02-16\",\n      \"to\": \"2762-74-65\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"IY\",\n    \"language\": \"YB\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"YR\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"userId\": \"<string>\",\n    \"bookingId\": \"<string>\"\n  }\n}"
+						},
+						{
+							"id": "d519d661-4002-415f-ab5e-4a5dddb0417b",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"6521-02-16\",\n      \"to\": \"2762-74-65\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"IY\",\n    \"language\": \"YB\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"YR\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"create"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Return booking detail",
+					"id": "37b9b7ed-0cf5-4061-a0e4-1229edce355e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/bookings/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId",
+									"value": "<string>"
+								},
+								{
+									"key": "residenceId",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "358fd77b-7453-40d1-84f0-9d66b18fae42",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"residenceId\": \"<string>\",\n    \"residenceName\": \"<string>\",\n    \"residenceCity\": \"<string>\",\n    \"residenceAddress\": \"<string>\",\n    \"residencePhone\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startUnsubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startUnsubscribeDate\": \"<string>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"6719-23-70\",\n      \"to\": \"8415-97-87\",\n      \"acceptance\": \"9976-73-57T46:29:45+95:90\",\n      \"renewal_start\": \"5649-75-32T69:35:64+56:99\",\n      \"renewal_end\": \"9885-63-54T22:37:86-14:16\",\n      \"inventory_start\": \"5052-35-55T16:99:70-15:36\",\n      \"inventory_end\": \"7387-64-06T83:03:39-58:57\",\n      \"checkin_start\": \"2103-69-81T18:69:15-64:62\",\n      \"checkin_end\": \"0643-92-89T12:08:61-27:77\",\n      \"checkout_start\": \"1946-68-05T29:72:64-31:87\",\n      \"checkout_end\": \"7503-88-53T11:06:70+39:80\"\n    },\n    \"stayType\": \"<string>\",\n    \"state\": \"hiring_finished\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"media\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"media\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "91ab03d8-7365-4654-ac48-c74a1c932631",
+							"name": "Bookings not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "3efafd55-98fd-4e52-a4da-8de629664a1e",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Returns list of bookings",
+					"id": "f4407d89-b777-4844-87b2-225cafaa5e47",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/bookings/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "152090b0-eb9e-4742-a109-cec79c1fead2",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"bookings\": [\n      {\n        \"id\": \"<string>\",\n        \"residenceId\": \"<string>\",\n        \"residenceName\": \"<string>\",\n        \"status\": \"<string>\",\n        \"from\": \"1142-67-82\",\n        \"to\": \"1729-90-15\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"residenceId\": \"<string>\",\n        \"residenceName\": \"<string>\",\n        \"status\": \"<string>\",\n        \"from\": \"8296-25-02\",\n        \"to\": \"6179-04-49\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "4e789b3d-5c41-4324-aeb9-33e6a144d049",
+							"name": "Bookings not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"findAll"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "7c82b9a4-20b4-4494-b422-2e10c1331825",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Return receipts",
+					"id": "04dfe86f-1aaa-48ad-96d8-e54d02f86b65",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"receipts",
+								"find",
+								":bookingId",
+								":residenceId"
+							],
+							"variable": [
+								{
+									"key": "bookingId",
+									"value": "<string>"
+								},
+								{
+									"key": "residenceId",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "91ff8a99-f79f-46ff-9b4b-c2127b66e986",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"receipts",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"receipts\": [\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "752ee621-fb57-4305-abcb-8f678e5ac603",
+							"name": "Bookings not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"receipts",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "aa07f104-b3b5-43e9-acac-cd280e5bee2b",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/bookings/receipts/find/:bookingId/:residenceId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"receipts",
+										"find",
+										":bookingId",
+										":residenceId"
+									],
+									"variable": [
+										{
+											"key": "bookingId"
+										},
+										{
+											"key": "residenceId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				}
+			],
+			"id": "58f6888b-e43c-429c-b596-aee5ca3b4010",
+			"description": "<description>"
+		},
+		{
+			"name": "payments",
+			"item": [
+				{
+					"name": "requestNewPay",
+					"id": "c9cfea30-05fb-4706-889f-9d38e275b621",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"price\": \"<number>\",\n  \"userId\": \"<string>\",\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/payments/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"payments",
+								"create"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "58925e33-6e1f-4905-9039-bac8f056d7bb",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"price\": \"<number>\",\n  \"userId\": \"<string>\",\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										"create"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"signatureVersion\": \"<string>\",\n    \"signature\": \"<string>\",\n    \"merchant\": \"<string>\",\n    \"payId\": \"<string>\"\n  }\n}"
+						},
+						{
+							"id": "e332d094-b1d1-4835-9ca7-ff58ceaeee4f",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"price\": \"<number>\",\n  \"userId\": \"<string>\",\n  \"residenceId\": \"<string>\",\n  \"bookingId\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/payments/create",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										"create"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "return a tpv operation status (ok, ko, pending);",
+					"id": "da52328c-8a37-4181-a17f-c35a8f6195c1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/payments/find/:id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"payments",
+								"find",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "a32fc1d6-cf90-42ea-8abe-8d012953cf03",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/payments/find/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										"find",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"paymentStatus\": \"<string>\"\n  }\n}"
+						},
+						{
+							"id": "9cfa278d-1bf6-4f97-a754-983cd57b60c7",
+							"name": "Bookings not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/payments/find/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										"find",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						},
+						{
+							"id": "d4d9a9fb-323c-4d03-967d-27111be7188b",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/payments/find/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"payments",
+										"find",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				}
+			],
+			"id": "c76cbde9-0b15-4750-a0dc-e27bc38cdaad",
+			"description": "<description>"
+		},
+		{
+			"name": "master-data",
+			"item": [
+				{
+					"name": "validateZipcode",
+					"id": "439603c2-fec1-4041-8cde-dec053ec234e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/regions/validateZipcode/:regionId/:zipcode",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"regions",
+								"validateZipcode",
+								":regionId",
+								":zipcode"
+							],
+							"variable": [
+								{
+									"key": "regionId",
+									"value": "<string>"
+								},
+								{
+									"key": "zipcode",
+									"value": "<string>"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "d1735181-9234-4389-9d7e-eaa43d992f27",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/regions/validateZipcode/:regionId/:zipcode",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"regions",
+										"validateZipcode",
+										":regionId",
+										":zipcode"
+									],
+									"variable": [
+										{
+											"key": "regionId"
+										},
+										{
+											"key": "zipcode"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"isValid\": \"<boolean>\"\n  }\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all nationalities available",
+					"id": "900727f2-6c7d-448a-806d-cfd4d054e5d3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/nationalities/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"nationalities",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ade46d26-a645-47ba-b528-978a92bcdeac",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/nationalities/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"nationalities",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"TM\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"ZZ\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "b8dc20db-86d8-460a-b521-e4cd5e5b8565",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/nationalities/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"nationalities",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all countries available",
+					"id": "f4e20003-04eb-4fd3-9985-57a06c346888",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/countries/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"countries",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "86549388-69aa-4316-951d-169609556ea9",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/countries/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"countries",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"name\": \"NQ\",\n        \"id\": \"<string>\"\n      },\n      {\n        \"name\": \"AO\",\n        \"id\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "a6cc7857-4293-4fa5-ac41-e11a3d40af0c",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/countries/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"countries",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all regions available",
+					"id": "99c77f04-7537-45c3-8a26-8a5a45d1c5ca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/regions/findByCountry/:countryname",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"regions",
+								"findByCountry",
+								":countryname"
+							],
+							"variable": [
+								{
+									"key": "countryname",
+									"value": "ZX"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "64d4d443-14ed-4b69-82e9-fb3827107c2f",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/regions/findByCountry/:countryname",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"regions",
+										"findByCountry",
+										":countryname"
+									],
+									"variable": [
+										{
+											"key": "countryname"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "2182e6fb-ce50-40f4-84ed-ed138ba836ff",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/regions/findByCountry/:countryname",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"regions",
+										"findByCountry",
+										":countryname"
+									],
+									"variable": [
+										{
+											"key": "countryname"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all languages available",
+					"id": "9c90838a-d9af-478d-b5fb-a36337f6f394",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/languages/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"languages",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "0b8927e3-09a3-460b-a347-4fb629464cdd",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/languages/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"languages",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"UX\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"QE\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "d91f76e1-c304-4962-b614-2fc0da048961",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/languages/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"languages",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": []
+						}
+					]
+				},
+				{
+					"name": "Returns all university degrees available",
+					"id": "e7369fad-a77c-489d-803d-46ebcb33dd05",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/universityDegrees/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"universityDegrees",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "a605d5cd-4f0a-4941-986a-8bb1dd676ddb",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/universityDegrees/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"universityDegrees",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "668df243-a2e6-439f-b823-66296714115b",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/universityDegrees/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"universityDegrees",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all identification profiles available",
+					"id": "3dbb7389-2a33-439d-909d-fff7f4da5307",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/idprofiles/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"idprofiles",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "e50db1ff-77cf-40a7-8183-8bc9faeeaad1",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/idprofiles/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"idprofiles",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "17f4a003-e945-4226-a0eb-e4dc2e728765",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/idprofiles/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"idprofiles",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all universities available",
+					"id": "0f67f1eb-9583-4051-9856-b2bb8f9c458d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/universities/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"universities",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "ae41a501-83e4-469b-b1d1-1033695b205d",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/universities/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"universities",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "f2aa3e85-6379-453c-82e4-7f859b9fb5db",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/universities/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"universities",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all genders available",
+					"id": "9ba44fe6-a25f-4d83-bee0-efbac56bd462",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/genders/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"genders",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "63d38bff-006d-41ab-8bbd-751433180326",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/genders/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"genders",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "ec0b079a-5191-4bc8-ba0b-673b9de2c60d",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/genders/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"genders",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all occupations available",
+					"id": "64d04d27-18b6-4e2c-8faf-3942fbc84855",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/occupations/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"occupations",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "3dbd020e-50e7-4a07-a91f-8a9f6b87ce88",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/occupations/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"occupations",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "3fd92534-c519-4837-b713-cce6e77c2994",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/occupations/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"occupations",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all studies available",
+					"id": "691e104c-b685-4c57-af23-da9aa746e5b2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/studies/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"studies",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "c4c34dba-1702-468e-a20e-80f8a02fdfe0",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/studies/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"studies",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "512f2d03-01f4-4c18-aed0-d3217b0a91e8",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/studies/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"studies",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all stay reasons available",
+					"id": "5583e83d-0838-4e82-a0cb-4b96f1ea2961",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/stayReasons/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"stayReasons",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "abf3c9ee-de99-4a43-9156-e7d759b2ed31",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/stayReasons/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"stayReasons",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "fd7785d2-a372-467a-85fe-12ac89f26e55",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/stayReasons/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"stayReasons",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all family relations available",
+					"id": "b610a3d0-b43c-4b93-800a-f34e86d79100",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/familyRelations/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"familyRelations",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "7f6a2a62-99fe-43cd-9151-db51aa144d4d",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/familyRelations/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"familyRelations",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "2b2061a0-fd8d-4431-b1d0-2a8d2a5b0697",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/familyRelations/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"familyRelations",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all cities",
+					"id": "339e3367-73a1-4744-9d63-e109715ba398",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/cities/findByRegion/:regionId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"cities",
+								"findByRegion",
+								":regionId"
+							],
+							"variable": [
+								{
+									"key": "regionId",
+									"value": "08"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "b48e3c06-6265-4790-bfef-19f67ec0621a",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/cities/findByRegion/:regionId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"cities",
+										"findByRegion",
+										":regionId"
+									],
+									"variable": [
+										{
+											"key": "regionId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "72103cee-1773-46ee-9eb4-b4e9585e0804",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/cities/findByRegion/:regionId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"cities",
+										"findByRegion",
+										":regionId"
+									],
+									"variable": [
+										{
+											"key": "regionId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all schools",
+					"id": "b208a56c-68b1-411c-8e69-a9282b10ea06",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/schools/findByRegionAndCity/:regionId/:cityId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"schools",
+								"findByRegionAndCity",
+								":regionId",
+								":cityId"
+							],
+							"variable": [
+								{
+									"key": "regionId",
+									"value": "08"
+								},
+								{
+									"key": "cityId",
+									"value": "9449"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "d1769aed-8063-4f6d-aac0-c33a81af3c6a",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/schools/findByRegionAndCity/:regionId/:cityId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"schools",
+										"findByRegionAndCity",
+										":regionId",
+										":cityId"
+									],
+									"variable": [
+										{
+											"key": "regionId"
+										},
+										{
+											"key": "cityId"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "6bfa67a6-0dde-4584-9280-6bfcddea4f00",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/schools/findByRegionAndCity/:regionId/:cityId",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"schools",
+										"findByRegionAndCity",
+										":regionId",
+										":cityId"
+									],
+									"variable": [
+										{
+											"key": "regionId"
+										},
+										{
+											"key": "cityId"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "Returns all incidence types",
+					"id": "638ee81c-773e-416f-9bbd-472badd2d5a6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "(Required) ",
+								"key": "Accept-Language",
+								"value": "<string>"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/master-data/incidences/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"master-data",
+								"incidences",
+								"findAll"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "1f3e404d-85e9-4c3a-96f9-f2b7acbfaa9d",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/incidences/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"incidences",
+										"findAll"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+						},
+						{
+							"id": "bc4b9ad8-3b01-430e-8fa9-a8a91924a266",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"description": "(Required) ",
+										"key": "Accept-Language",
+										"value": "<string>"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/master-data/incidences/findAll",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"master-data",
+										"incidences",
+										"findAll"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				}
+			],
+			"id": "a3a710ca-f032-49ae-b3a1-fac428380af5",
+			"description": "<description>"
+		}
+	],
+	"variable": [
+		{
+			"id": "c47cc0c5-cd50-4921-ae41-096a30ab5167",
+			"key": "baseUrl",
+			"value": "https://resa-pre-backend.azurewebsites.net/api/v1"
+		}
+	]
+}
