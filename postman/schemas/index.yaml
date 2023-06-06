@@ -82,18 +82,11 @@ paths:
           content:
             application/json:
               schema:
-                allOf:
-                    - $ref: '#/components/schemas/LoginRequest'
-                    - properties:
-                        email:
-                          type: string
-                          example: "test@email.es"
-                        password:
-                          type: string
-                          example: "123456"
-                        rememberMe:
-                          type: boolean
-                          example: true
+                $ref: '#/components/schemas/LoginRequest'
+              example: 
+                email: "test@email.es"
+                password: "123456"
+                rememberMe: true
           required: true
         responses:
           "200":
