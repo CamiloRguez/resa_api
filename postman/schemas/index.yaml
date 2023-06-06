@@ -8,9 +8,10 @@ servers:
 paths:
     /auth/recovery-password:
       post:
+        operationId: recoveryPassword
+        summary: recoveryPassword
         tags:
         - auth
-        operationId: index
         parameters:
         - name: Accept-Language
           in: header
@@ -42,9 +43,10 @@ paths:
                         - $ref: '#/components/schemas/Response500'
     /auth/logout:
         post:
+          operationId: logout
+          summary: logout
           tags:
           - auth
-          operationId: index_1
           requestBody:
             content:
               application/json:
@@ -72,9 +74,10 @@ paths:
                             - $ref: '#/components/schemas/Response500'
     /auth/login:
       post:
+        operationId: login
+        summary: login
         tags:
         - auth
-        operationId: index_2
         requestBody:
           content:
             application/json:
