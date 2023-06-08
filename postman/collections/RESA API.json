@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "6396e44a-f465-4c74-98e8-699771382823",
+		"_postman_id": "cf2d537f-c147-4ed5-b1e3-85c67c6c8136",
 		"name": "RESA API",
 		"description": "<description>",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "26009284-6396e44a-f465-4c74-98e8-699771382823"
+		"_uid": "26009284-cf2d537f-c147-4ed5-b1e3-85c67c6c8136"
 	},
 	"item": [
 		{
@@ -12,7 +12,7 @@
 			"item": [
 				{
 					"name": "recoveryPassword",
-					"id": "3ad7b807-098a-44b2-966d-eddec8ec7220",
+					"id": "f938a8d2-652c-4fba-8982-df8c4789104c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -56,7 +56,7 @@
 					},
 					"response": [
 						{
-							"id": "2e1229b9-4a2d-43ee-b4a6-d504bda1d92e",
+							"id": "5b9493b3-99cc-4a9d-9085-78518fc338d6",
 							"name": "Send and email for password recover",
 							"originalRequest": {
 								"method": "POST",
@@ -106,10 +106,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
 						},
 						{
-							"id": "01cc748b-e399-4313-8290-7b4d16789662",
+							"id": "0d2a047c-7729-4a9b-b4a8-395332d0e800",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "POST",
@@ -165,7 +165,7 @@
 				},
 				{
 					"name": "logout",
-					"id": "d7daeb2e-44fe-40dc-953c-268a13563316",
+					"id": "40ecaa89-7502-420f-bf20-f452e74802c1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -204,7 +204,7 @@
 					},
 					"response": [
 						{
-							"id": "9c087bf8-d525-462d-bc1a-e2ac9b21444a",
+							"id": "651a8006-75e1-406f-b4af-847cfd8b048f",
 							"name": "Send and email for password recover",
 							"originalRequest": {
 								"method": "POST",
@@ -252,7 +252,7 @@
 							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"userId\": \"<string>\",\n    \"token\": \"<string>\"\n  }\n}"
 						},
 						{
-							"id": "89fe3c1e-ca01-464f-b950-a366a23d21de",
+							"id": "eb88d81b-d7b0-479d-8607-a8699e172781",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "POST",
@@ -303,7 +303,7 @@
 				},
 				{
 					"name": "login",
-					"id": "d6d221fa-3cc1-462a-b2ef-bf1501bc17ac",
+					"id": "833853b5-9090-4a46-9705-a01316a165d2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -342,7 +342,7 @@
 					},
 					"response": [
 						{
-							"id": "7fc969ea-5629-4f8d-bfd5-6255e4a162c8",
+							"id": "4f486905-b2a3-4bbe-95e0-2fe37059d050",
 							"name": "Login a valid user",
 							"originalRequest": {
 								"method": "POST",
@@ -387,12 +387,12 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"token\": \"<string>\",\n    \"userId\": \"<string>\"\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"token\": \"<string>\",\n    \"userId\": \"<string>\"\n  }\n}"
 						}
 					]
 				}
 			],
-			"id": "037d130f-8dc5-4ba7-8f1f-9aea694b9fa9",
+			"id": "08c7d462-1b61-488b-be97-366c00cf7e9a",
 			"description": "<description>"
 		},
 		{
@@ -400,7 +400,7 @@
 			"item": [
 				{
 					"name": "find documents for a booking",
-					"id": "9f89c1b8-e83b-4022-a697-34ac9c3187e4",
+					"id": "df291a3d-567b-49b4-a4cc-8486825e25e5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -442,7 +442,7 @@
 					},
 					"response": [
 						{
-							"id": "211c5264-05e8-4632-9ba6-b5794b310eb7",
+							"id": "ea7a5308-3752-4302-94af-74f8cd984f8d",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -491,7 +491,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"documents\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"required\": \"<boolean>\",\n        \"status\": \"<string>\",\n        \"type\": \"<string>\",\n        \"files\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ]\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"description\": \"<string>\",\n        \"required\": \"<boolean>\",\n        \"status\": \"<string>\",\n        \"type\": \"<string>\",\n        \"files\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ]\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "99a89c20-2ba3-4473-b51d-a7be1bcb62d9",
+							"id": "19479059-6bf0-41b7-8e9d-f60337df674d",
 							"name": "Bookings not found",
 							"originalRequest": {
 								"method": "GET",
@@ -530,7 +530,7 @@
 							"cookie": []
 						},
 						{
-							"id": "18c8d746-d0fd-4a47-9263-9c56d0908a23",
+							"id": "891af37c-fe2f-47b6-a8bf-bd6f487242bd",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -572,7 +572,7 @@
 				},
 				{
 					"name": "Upload Documents from Residences",
-					"id": "8be02eae-0d71-45e6-9680-a7920ea86441",
+					"id": "abce7bcc-7f92-492a-afa4-c4afdb6c4fb7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -611,7 +611,7 @@
 					},
 					"response": [
 						{
-							"id": "8bbf4414-4671-442f-8101-e6073e6ee9cf",
+							"id": "257dc891-5a2e-4c09-92ea-60e30376e1ee",
 							"name": "Upload of Files",
 							"originalRequest": {
 								"method": "POST",
@@ -656,10 +656,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
 						},
 						{
-							"id": "ce6c6482-5807-4ba0-921d-3406757c5785",
+							"id": "0f113646-0aaf-4b52-b709-f4c0c18dd7b7",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "POST",
@@ -699,7 +699,7 @@
 					]
 				}
 			],
-			"id": "95ce545b-9924-49b9-9d87-a01bf490809d",
+			"id": "bd8bf23d-0a29-4fd2-ace3-10c443cd8853",
 			"description": "<description>"
 		},
 		{
@@ -707,7 +707,7 @@
 			"item": [
 				{
 					"name": "canCreate",
-					"id": "97462280-d4b6-4a7f-82c7-666437565867",
+					"id": "bf4eef07-62e0-4feb-b93a-2b39e1f9a27d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -738,18 +738,18 @@
 							"variable": [
 								{
 									"key": "startDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								},
 								{
 									"key": "endDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "e3e8f8c9-6ceb-4e1c-9f9c-23a13269770a",
+							"id": "83ffad2a-7e1b-410c-a9b2-dabd5a8e97a4",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -801,7 +801,7 @@
 				},
 				{
 					"name": "findUser",
-					"id": "4470000e-f8d2-4056-ae37-d5b689e87252",
+					"id": "b1c1a7d6-5703-4935-bf5c-071437023b85",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -831,7 +831,7 @@
 					},
 					"response": [
 						{
-							"id": "ad8d364c-dea0-4ae1-8e63-b1cdccdf5e50",
+							"id": "fe5bd242-e321-47d1-af9d-e492ee21b9a4",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -867,13 +867,13 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"image\": \"<string>\",\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"UV\",\n    \"language\": \"SL\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"IV\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"image\": \"<string>\",\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"AE\",\n    \"language\": \"LU\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"OL\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  }\n}"
 						}
 					]
 				},
 				{
 					"name": "update an user",
-					"id": "049f67db-2218-4404-80e2-f4f493e2b361",
+					"id": "49e5de64-fc38-4465-aa04-721123dee198",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -896,7 +896,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"FM\",\n  \"language\": \"QM\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"MX\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+							"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"TO\",\n  \"language\": \"OG\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"RO\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -917,7 +917,7 @@
 					},
 					"response": [
 						{
-							"id": "021fbaae-a63c-4640-8ec4-0fd3b9195484",
+							"id": "368331ae-ff29-4a24-81b7-ac9a5dcf41a7",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "PUT",
@@ -938,7 +938,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"FM\",\n  \"language\": \"QM\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"MX\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"TO\",\n  \"language\": \"OG\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"RO\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -967,10 +967,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
 						},
 						{
-							"id": "ffde87e1-4226-4588-974f-e2d560f2632d",
+							"id": "118ea201-fcad-447f-9ee0-0dd8a5b271e7",
 							"name": "User not updated",
 							"originalRequest": {
 								"method": "PUT",
@@ -987,7 +987,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"FM\",\n  \"language\": \"QM\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"MX\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"TO\",\n  \"language\": \"OG\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"RO\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -1013,7 +1013,7 @@
 							"cookie": []
 						},
 						{
-							"id": "c2da3d5a-d34e-4673-83ba-80f7e75997ab",
+							"id": "67aacc9b-f4a0-4a65-88c6-f8c20d346282",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "PUT",
@@ -1030,7 +1030,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"FM\",\n  \"language\": \"QM\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"MX\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
+									"raw": "{\n  \"image\": \"<string>\",\n  \"name\": \"<string>\",\n  \"firstname\": \"<string>\",\n  \"secondname\": \"<string>\",\n  \"email\": \"<string>\",\n  \"mobile\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"identificationType\": \"<string>\",\n  \"identificationNumber\": \"<string>\",\n  \"nationality\": \"TO\",\n  \"language\": \"OG\",\n  \"password\": \"<string>\",\n  \"gender\": \"<string>\",\n  \"birthdate\": \"<string>\",\n  \"address\": {\n    \"country\": \"<string>\",\n    \"region\": \"<string>\",\n    \"city\": \"<string>\",\n    \"street\": \"<string>\",\n    \"number\": \"<string>\",\n    \"floor\": \"<string>\",\n    \"stair\": \"<string>\",\n    \"door\": \"<string>\",\n    \"building\": \"<string>\",\n    \"zipcode\": \"<string>\"\n  },\n  \"contactPerson\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"kinship\": \"<string>\"\n  },\n  \"tutor\": {\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"RO\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    }\n  }\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -1059,7 +1059,7 @@
 				},
 				{
 					"name": "checkIfUserExists",
-					"id": "c400f718-fe19-474c-8096-41a075e45604",
+					"id": "3c520b80-ad46-4574-9c1e-949b3067b55c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1096,7 +1096,7 @@
 					},
 					"response": [
 						{
-							"id": "b328fec7-927a-420d-8891-7c62260f65cd",
+							"id": "a59f5fbe-df49-4435-884b-ca7b8c953833",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -1138,10 +1138,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"exists\": \"<boolean>\"\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"exists\": \"<boolean>\"\n  }\n}"
 						},
 						{
-							"id": "32f43fef-4ee6-4abe-a0e5-904c8d9dd096",
+							"id": "ccc81169-f958-4e0c-b18b-8b7b346a1424",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -1189,7 +1189,7 @@
 				},
 				{
 					"name": "change all notice status",
-					"id": "6b3e5a51-5143-4b9e-bdcc-903e63a96c16",
+					"id": "7a22a2c9-680e-4671-a7e3-1ab19fe1188e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1233,7 +1233,7 @@
 					},
 					"response": [
 						{
-							"id": "4954aaec-d97d-42ce-9c2d-db2da56bb8ba",
+							"id": "64556392-3165-468d-ab1f-a907ff42290b",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "PUT",
@@ -1283,10 +1283,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
 						},
 						{
-							"id": "9a3ec401-0ee9-466b-9ec8-48ccf09655ca",
+							"id": "953eed9e-d936-4b6b-adaa-1caa018303d5",
 							"name": "Notices not found",
 							"originalRequest": {
 								"method": "PUT",
@@ -1329,7 +1329,7 @@
 							"cookie": []
 						},
 						{
-							"id": "6f790457-8e1d-4e74-95e3-878adb6570ef",
+							"id": "1c36567e-4c4e-45ad-a849-7b8f9c1c77ba",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "PUT",
@@ -1375,7 +1375,7 @@
 				},
 				{
 					"name": "Returns list of notices",
-					"id": "204661de-73c6-4f84-bb31-f6e8d650d7b2",
+					"id": "2c7f14e1-3207-4638-86d9-edff81850d6e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1405,7 +1405,7 @@
 					},
 					"response": [
 						{
-							"id": "cb99395c-21ce-4c21-b3ff-6e22ef703ed9",
+							"id": "bd3fb40c-dbc4-4741-98fb-2255b804b17f",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -1441,10 +1441,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"notices\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"date\": \"<string>\",\n        \"readed\": \"<boolean>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"date\": \"<string>\",\n        \"readed\": \"<boolean>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"notices\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"date\": \"<string>\",\n        \"readed\": \"<boolean>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"date\": \"<string>\",\n        \"readed\": \"<boolean>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "c12b8009-e2d9-4c48-851a-6e5c55abc611",
+							"id": "6d7489fc-5e50-4fba-b9c5-672303ba4829",
 							"name": "Notices not found",
 							"originalRequest": {
 								"method": "GET",
@@ -1473,7 +1473,7 @@
 							"cookie": []
 						},
 						{
-							"id": "07585baa-02bc-4a54-a0f1-7c42bdc23110",
+							"id": "98adf34d-cad0-4518-a0b8-18125bfa5ac7",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -1505,7 +1505,7 @@
 				},
 				{
 					"name": "change notice status",
-					"id": "acac656e-4aa9-4011-811a-a05381a2a76b",
+					"id": "5d1cfa73-405f-44c7-9add-a9832c4012c9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1556,7 +1556,7 @@
 					},
 					"response": [
 						{
-							"id": "e78dcb4d-ae10-41fe-bd35-2a1a493ab2ba",
+							"id": "a4edb113-9226-49d7-9103-d7f494c15ca6",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "PUT",
@@ -1612,10 +1612,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
 						},
 						{
-							"id": "4543cc7b-0b96-49db-b42f-a14633fd6582",
+							"id": "fce97b20-00b2-4ece-a7b6-3db2118fd0b8",
 							"name": "Notices not found",
 							"originalRequest": {
 								"method": "PUT",
@@ -1664,7 +1664,7 @@
 							"cookie": []
 						},
 						{
-							"id": "452c4f21-0f18-4372-a049-114d3d11ccd1",
+							"id": "902a5ddc-68f9-47c9-840b-500bae30c6cc",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "PUT",
@@ -1716,7 +1716,7 @@
 				},
 				{
 					"name": "Returns list of incidences",
-					"id": "f2e83e3e-0801-4e70-89c6-70dbd6e455e1",
+					"id": "5966771c-7a07-4d0c-ab1a-2d82625334c5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1746,14 +1746,14 @@
 							"variable": [
 								{
 									"key": "startDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "c8a5a272-1cbf-4632-930d-8541400ebfb5",
+							"id": "2c076aa3-6684-48a0-95cd-85e2b89fceed",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -1795,10 +1795,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"incidences\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"7504-70-41T66:41:29-85:93\",\n        \"status\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"3854-60-58T39:00:02+17:06\",\n        \"status\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"incidences\": [\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"1745-74-91T87:72:01-81:24\",\n        \"status\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"title\": \"<string>\",\n        \"type\": \"<string>\",\n        \"createDate\": \"4206-32-61T70:90:57+29:47\",\n        \"status\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "b1e0c984-7c18-441a-97cb-7a54256b4d4e",
+							"id": "f7ba9672-85a9-4a9a-893c-3e650c4c0ea8",
 							"name": "Incidences not found",
 							"originalRequest": {
 								"method": "GET",
@@ -1833,7 +1833,7 @@
 							"cookie": []
 						},
 						{
-							"id": "7688a278-76e1-4289-9e9d-7c47c4166304",
+							"id": "f19ad59b-d01a-4450-95fa-f3489022536f",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -1871,7 +1871,7 @@
 				},
 				{
 					"name": "Create an incidence",
-					"id": "af74d1cf-8181-47ae-b6ab-a707f92474ae",
+					"id": "e1543257-5b58-484c-ba1b-56b8af92a646",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1915,7 +1915,7 @@
 					},
 					"response": [
 						{
-							"id": "048def70-8195-444d-9fe5-c10b9259bfb7",
+							"id": "e33f30c3-f04e-46fa-989b-a5710db5c71d",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "POST",
@@ -1965,10 +1965,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
 						},
 						{
-							"id": "8b51a3bb-c360-4db3-8f80-a5861503d10e",
+							"id": "e6970e41-fee1-421c-ac7d-70d158a5b926",
 							"name": "Incidences not found",
 							"originalRequest": {
 								"method": "POST",
@@ -2011,7 +2011,7 @@
 							"cookie": []
 						},
 						{
-							"id": "c490dd59-af27-468e-81c3-a0d119af60c0",
+							"id": "41542100-6238-4cc4-9afe-da51f497db80",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "POST",
@@ -2056,7 +2056,7 @@
 					]
 				}
 			],
-			"id": "32396ed1-c6f0-4da8-b894-ca2f0aa9709d",
+			"id": "bbb70608-f67c-4f99-bc5a-bb2bec080a00",
 			"description": "<description>"
 		},
 		{
@@ -2064,7 +2064,7 @@
 			"item": [
 				{
 					"name": "isRenewer",
-					"id": "8f729ded-6818-4d6d-9dd2-e76c00554c64",
+					"id": "c22d9b8f-c906-47ca-8d25-c461cfe04ee0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2101,7 +2101,7 @@
 					},
 					"response": [
 						{
-							"id": "0babfeca-e946-47ea-8922-4a72033681af",
+							"id": "44c61c3e-b4d3-4fc5-9575-3c5ce7dae515",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -2149,7 +2149,7 @@
 				},
 				{
 					"name": "Returns residence by id",
-					"id": "1d3f8f80-e51e-4603-b8bb-6078220954b7",
+					"id": "2f32261d-2ff8-4df5-9f07-515902904769",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2179,14 +2179,14 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1289"
+									"value": "8335"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "9ad254c4-1c0b-4ca8-b982-e78c8ba3f436",
+							"id": "32f562ac-0aa6-42a8-9760-a390134ce973",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -2228,10 +2228,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"phone\": \"<string>\"\n    },\n    \"agreements\": [\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"universities\": [\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"periods\": {\n      \"intermediate\": [\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"3301\",\n          \"from\": \"1793-36-24\",\n          \"to\": \"1303-40-32\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        },\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"5393\",\n          \"from\": \"3016-48-68\",\n          \"to\": \"4783-20-35\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        }\n      ],\n      \"full\": [\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"5386\",\n          \"from\": \"4866-21-80\",\n          \"to\": \"0232-37-96\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        },\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"0276\",\n          \"from\": \"5769-07-97\",\n          \"to\": \"8457-59-49\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        }\n      ]\n    },\n    \"documents\": [\n      {\n        \"type\": \"<string>\",\n        \"url\": \"<string>\",\n        \"appliedTo\": \"<string>\"\n      },\n      {\n        \"type\": \"<string>\",\n        \"url\": \"<string>\",\n        \"appliedTo\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"id\": \"<string>\",\n    \"name\": \"<string>\",\n    \"address\": {\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"phone\": \"<string>\"\n    },\n    \"agreements\": [\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"universities\": [\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"residenceId\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ],\n    \"periods\": {\n      \"intermediate\": [\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"1654\",\n          \"from\": \"4221-15-72\",\n          \"to\": \"9335-44-95\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        },\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"5965\",\n          \"from\": \"8635-96-67\",\n          \"to\": \"5683-28-41\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        }\n      ],\n      \"full\": [\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"9918\",\n          \"from\": \"7025-66-72\",\n          \"to\": \"4697-01-30\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        },\n        {\n          \"stayType\": \"<string>\",\n          \"year\": \"2513\",\n          \"from\": \"4322-95-43\",\n          \"to\": \"0981-22-35\",\n          \"min\": \"<number>\",\n          \"appliedTo\": {\n            \"example\": [\n              \"default\",\n              \"renewer\"\n            ]\n          }\n        }\n      ]\n    },\n    \"documents\": [\n      {\n        \"type\": \"<string>\",\n        \"url\": \"<string>\",\n        \"appliedTo\": \"<string>\"\n      },\n      {\n        \"type\": \"<string>\",\n        \"url\": \"<string>\",\n        \"appliedTo\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "231070eb-6e97-4552-8f01-a53911e2796e",
+							"id": "0452c4b2-fe2c-4d4d-b3b4-51b054a6c640",
 							"name": "Residence not found",
 							"originalRequest": {
 								"method": "GET",
@@ -2266,7 +2266,7 @@
 							"cookie": []
 						},
 						{
-							"id": "adf846c6-1e60-4479-a71a-46fcca40a081",
+							"id": "cca42748-3281-4ef8-9c8d-a93e7cd6231e",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -2314,7 +2314,7 @@
 				},
 				{
 					"name": "Returns room types by residence id",
-					"id": "915dea53-1548-4fb7-ad42-d252c1039ea9",
+					"id": "d0c7cb20-9342-4ea0-accd-e9ae61207018",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2332,7 +2332,7 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=true",
+							"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=false",
 							"host": [
 								"{{baseUrl}}"
 							],
@@ -2347,28 +2347,28 @@
 							"query": [
 								{
 									"key": "university",
-									"value": "true"
+									"value": "false"
 								}
 							],
 							"variable": [
 								{
 									"key": "residenceId",
-									"value": "3642"
+									"value": "1802"
 								},
 								{
 									"key": "startDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								},
 								{
 									"key": "endDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "22c1f2d9-940b-4e73-aca5-17ebed337dee",
+							"id": "cab83118-f819-455c-bc85-ad11837f3acc",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -2384,7 +2384,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=true",
+									"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=false",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -2399,7 +2399,7 @@
 									"query": [
 										{
 											"key": "university",
-											"value": "true"
+											"value": "false"
 										}
 									],
 									"variable": [
@@ -2428,7 +2428,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"order\": \"<number>\",\n        \"medias\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ],\n        \"price\": \"<number>\",\n        \"modalities\": [\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"extras\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ]\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"order\": \"<number>\",\n        \"medias\": [\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          },\n          {\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"type\": \"<string>\",\n            \"url\": \"<string>\"\n          }\n        ],\n        \"price\": \"<number>\",\n        \"modalities\": [\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"name\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"extras\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"pay\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ]\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "ed64933a-b454-452b-a2dd-ee264fdd4f7f",
+							"id": "c9f50e31-fdbe-493d-a78e-334dcc53a361",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -2444,7 +2444,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=true",
+									"raw": "{{baseUrl}}/residences/room-types/findByResidence/:residenceId/:startDate/:endDate?university=false",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -2459,7 +2459,7 @@
 									"query": [
 										{
 											"key": "university",
-											"value": "true"
+											"value": "false"
 										}
 									],
 									"variable": [
@@ -2491,7 +2491,7 @@
 				},
 				{
 					"name": "Returns additional payments and payment methods",
-					"id": "f3e3c63d-6650-4f0d-884c-eae642b8e527",
+					"id": "ea2b5afe-46f4-4924-888c-8d8fc2328bdc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2525,7 +2525,7 @@
 							"variable": [
 								{
 									"key": "residenceId",
-									"value": "3642"
+									"value": "1802"
 								},
 								{
 									"key": "stayType",
@@ -2533,18 +2533,18 @@
 								},
 								{
 									"key": "startDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								},
 								{
 									"key": "endDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "0eb04399-eebe-4728-bd26-200046c3ba67",
+							"id": "8086fe08-7deb-465a-8ddd-6642359a4c69",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -2602,7 +2602,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"additionalPayments\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"paymentMethods\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "bf9c7710-76f3-4662-b9c3-7d877b109c2e",
+							"id": "3cb9ac60-e450-4adc-93b9-da911e1e4458",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -2663,7 +2663,7 @@
 				},
 				{
 					"name": "Returns extras availables",
-					"id": "f240ed59-54ff-42e0-8b29-430076d9eee8",
+					"id": "860b9c20-5ccb-4eda-b333-eafe68a1a696",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2695,18 +2695,18 @@
 							"variable": [
 								{
 									"key": "residenceId",
-									"value": "3642"
+									"value": "1802"
 								},
 								{
 									"key": "startDate",
-									"value": "3319-83-12"
+									"value": "3414-26-68"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "f437fbcd-eaf2-4991-a882-cab8fa19960d",
+							"id": "414c29c7-c365-4b2c-b451-289f3ce343b5",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -2753,10 +2753,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startSubscribeDate\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "61878524-c790-4043-ab39-5937eee11076",
+							"id": "a0d2d806-cee5-489f-a9cd-fadef6c02c8d",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -2808,7 +2808,7 @@
 					]
 				}
 			],
-			"id": "1df726ca-1ff0-48e2-b1ba-f9e022d7241a",
+			"id": "068098ea-09c3-4831-aa5e-5bf3f92468fc",
 			"description": "<description>"
 		},
 		{
@@ -2816,7 +2816,7 @@
 			"item": [
 				{
 					"name": "createBooking",
-					"id": "ee9da810-aa02-4332-a015-f4ab7431a218",
+					"id": "83104ce4-edc6-4509-b80d-6df209910de8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2834,7 +2834,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"5861-74-33\",\n      \"to\": \"9969-49-52\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"SV\",\n    \"language\": \"HQ\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"VX\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
+							"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"1884-24-93\",\n      \"to\": \"6808-96-61\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"DR\",\n    \"language\": \"AD\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"EZ\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -2855,7 +2855,7 @@
 					},
 					"response": [
 						{
-							"id": "9ff1830e-5183-41d0-8fa3-36a6e037e7c0",
+							"id": "d76d9a6f-22fc-46c7-ba1c-562016a14fc1",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "POST",
@@ -2871,7 +2871,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"5861-74-33\",\n      \"to\": \"9969-49-52\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"SV\",\n    \"language\": \"HQ\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"VX\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
+									"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"1884-24-93\",\n      \"to\": \"6808-96-61\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"DR\",\n    \"language\": \"AD\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"EZ\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -2903,7 +2903,7 @@
 							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"userId\": \"<string>\",\n    \"bookingId\": \"<string>\"\n  }\n}"
 						},
 						{
-							"id": "ffef03c3-964a-4104-8364-2d355706fe60",
+							"id": "44eafaaf-77f6-4a15-80e4-3e762cdbdfde",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "POST",
@@ -2919,7 +2919,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"5861-74-33\",\n      \"to\": \"9969-49-52\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"SV\",\n    \"language\": \"HQ\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"VX\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
+									"raw": "{\n  \"booking\": {\n    \"residenceId\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"1884-24-93\",\n      \"to\": \"6808-96-61\"\n    },\n    \"stayType\": \"<string>\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"number\": \"<string>\"\n      }\n    ]\n  },\n  \"user\": {\n    \"image\": \"<string>\",\n    \"name\": \"<string>\",\n    \"firstname\": \"<string>\",\n    \"secondname\": \"<string>\",\n    \"email\": \"<string>\",\n    \"mobile\": \"<string>\",\n    \"phone\": \"<string>\",\n    \"identificationType\": \"<string>\",\n    \"identificationNumber\": \"<string>\",\n    \"nationality\": \"DR\",\n    \"language\": \"AD\",\n    \"password\": \"<string>\",\n    \"gender\": \"<string>\",\n    \"birthdate\": \"<string>\",\n    \"address\": {\n      \"country\": \"<string>\",\n      \"region\": \"<string>\",\n      \"city\": \"<string>\",\n      \"street\": \"<string>\",\n      \"number\": \"<string>\",\n      \"floor\": \"<string>\",\n      \"stair\": \"<string>\",\n      \"door\": \"<string>\",\n      \"building\": \"<string>\",\n      \"zipcode\": \"<string>\"\n    },\n    \"contactPerson\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"phone\": \"<string>\",\n      \"kinship\": \"<string>\"\n    },\n    \"tutor\": {\n      \"name\": \"<string>\",\n      \"firstname\": \"<string>\",\n      \"secondname\": \"<string>\",\n      \"email\": \"<string>\",\n      \"identificationType\": \"<string>\",\n      \"identificationNumber\": \"<string>\",\n      \"nationality\": \"EZ\",\n      \"birthdate\": \"<string>\",\n      \"address\": {\n        \"country\": \"<string>\",\n        \"region\": \"<string>\",\n        \"city\": \"<string>\",\n        \"street\": \"<string>\",\n        \"number\": \"<string>\",\n        \"floor\": \"<string>\",\n        \"stair\": \"<string>\",\n        \"door\": \"<string>\",\n        \"building\": \"<string>\",\n        \"zipcode\": \"<string>\"\n      }\n    }\n  },\n  \"receiveCommercialCommunications\": \"<boolean>\",\n  \"transferPersonalData\": \"<boolean>\",\n  \"acceptanceConditions\": \"<boolean>\"\n}",
 									"options": {
 										"raw": {
 											"headerFamily": "json",
@@ -2954,7 +2954,7 @@
 				},
 				{
 					"name": "Return booking detail",
-					"id": "31b9ec58-8a90-454f-96c8-e1b2e3f8fb6a",
+					"id": "2db91d16-9b1d-4a61-89d9-9828fd75471f",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2996,7 +2996,7 @@
 					},
 					"response": [
 						{
-							"id": "70fab004-9dc5-4536-93c2-e69ee7c66688",
+							"id": "1585c2b1-5fd3-40a6-a153-7dd9abc560d8",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3042,10 +3042,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"residenceId\": \"<string>\",\n    \"residenceName\": \"<string>\",\n    \"residenceCity\": \"<string>\",\n    \"residenceAddress\": \"<string>\",\n    \"residencePhone\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startUnsubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startUnsubscribeDate\": \"<string>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"8501-80-44\",\n      \"to\": \"3353-89-06\",\n      \"acceptance\": \"0603-22-37T64:83:54+21:48\",\n      \"renewal_start\": \"7505-11-71T26:12:02+76:57\",\n      \"renewal_end\": \"7005-34-98T35:67:57+54:84\",\n      \"inventory_start\": \"2811-37-29T54:48:73-01:05\",\n      \"inventory_end\": \"1033-00-73T95:62:24-55:58\",\n      \"checkin_start\": \"5059-31-05T62:57:34+31:20\",\n      \"checkin_end\": \"7896-56-91T58:08:14+41:99\",\n      \"checkout_start\": \"2476-27-56T82:73:42-90:70\",\n      \"checkout_end\": \"4167-83-13T27:37:71+00:06\"\n    },\n    \"stayType\": \"<string>\",\n    \"state\": \"booking_approved\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"media\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"media\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"residenceId\": \"<string>\",\n    \"residenceName\": \"<string>\",\n    \"residenceCity\": \"<string>\",\n    \"residenceAddress\": \"<string>\",\n    \"residencePhone\": \"<string>\",\n    \"payments\": [\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"price\": \"<number>\"\n      }\n    ],\n    \"extras\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startUnsubscribeDate\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"startUnsubscribeDate\": \"<string>\"\n      }\n    ],\n    \"dates\": {\n      \"from\": \"8030-62-02\",\n      \"to\": \"1133-97-65\",\n      \"acceptance\": \"5991-05-49T84:46:41-33:35\",\n      \"renewal_start\": \"5239-98-16T16:85:79+53:37\",\n      \"renewal_end\": \"6248-64-75T69:99:12-25:68\",\n      \"inventory_start\": \"8079-44-98T26:03:52-15:54\",\n      \"inventory_end\": \"3792-36-81T73:52:32-53:69\",\n      \"checkin_start\": \"4876-22-10T67:00:19+41:51\",\n      \"checkin_end\": \"5766-83-68T34:95:66+25:56\",\n      \"checkout_start\": \"8066-74-63T41:20:75-33:96\",\n      \"checkout_end\": \"4240-99-91T58:00:60-40:03\"\n    },\n    \"stayType\": \"<string>\",\n    \"state\": \"hiring_pending\",\n    \"payMethod\": \"<string>\",\n    \"rooms\": [\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"media\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"order\": \"<number>\",\n        \"name\": \"<string>\",\n        \"price\": \"<number>\",\n        \"services\": [\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          },\n          {\n            \"id\": \"<string>\",\n            \"order\": \"<number>\",\n            \"name\": \"<string>\",\n            \"slug\": \"<string>\",\n            \"price\": \"<number>\"\n          }\n        ],\n        \"media\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "6cbd825f-0660-429a-924f-b16c620e5b28",
+							"id": "f4a26550-6883-40f8-acc8-f3622ea4197b",
 							"name": "Bookings not found",
 							"originalRequest": {
 								"method": "GET",
@@ -3084,7 +3084,7 @@
 							"cookie": []
 						},
 						{
-							"id": "15974559-5661-40a2-b0cb-e79f1b4b8b5d",
+							"id": "02c67755-4dcd-4e40-8bcf-a124a83ea775",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -3126,7 +3126,7 @@
 				},
 				{
 					"name": "Returns list of bookings",
-					"id": "f3770a34-8f38-4c14-83a8-3fe8b7bec6e7",
+					"id": "269d3935-5161-4b7e-83e9-90a455d06268",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3151,7 +3151,7 @@
 					},
 					"response": [
 						{
-							"id": "3d072f3a-9388-405d-9128-4f80d85c44ea",
+							"id": "f7b5c340-d4c3-4832-8196-cd613da50cc9",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3182,10 +3182,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"bookings\": [\n      {\n        \"id\": \"<string>\",\n        \"residenceId\": \"<string>\",\n        \"residenceName\": \"<string>\",\n        \"status\": \"<string>\",\n        \"from\": \"3398-76-48\",\n        \"to\": \"5540-87-32\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"residenceId\": \"<string>\",\n        \"residenceName\": \"<string>\",\n        \"status\": \"<string>\",\n        \"from\": \"3614-14-60\",\n        \"to\": \"4608-75-76\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"bookings\": [\n      {\n        \"id\": \"<string>\",\n        \"residenceId\": \"<string>\",\n        \"residenceName\": \"<string>\",\n        \"status\": \"<string>\",\n        \"from\": \"8075-92-04\",\n        \"to\": \"2427-68-52\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"residenceId\": \"<string>\",\n        \"residenceName\": \"<string>\",\n        \"status\": \"<string>\",\n        \"from\": \"0515-56-62\",\n        \"to\": \"9001-40-15\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "90c0874a-1a62-4aec-a83a-a60c6b33ccac",
+							"id": "48fb601d-a3ad-4819-9008-a89ef9412ae3",
 							"name": "Bookings not found",
 							"originalRequest": {
 								"method": "GET",
@@ -3208,7 +3208,7 @@
 							"cookie": []
 						},
 						{
-							"id": "a62ea8c7-0c56-4b1d-8a83-75997a80b732",
+							"id": "fa7287f4-663d-4650-8b18-d0702514212b",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -3234,7 +3234,7 @@
 				},
 				{
 					"name": "Return receipts",
-					"id": "8505843a-40be-4763-b5a5-97e5bf72c317",
+					"id": "180191fb-08c7-4645-9813-b7353f9db8d9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3277,7 +3277,7 @@
 					},
 					"response": [
 						{
-							"id": "8f80d160-07ca-4e96-8140-57a9906d239c",
+							"id": "7329a73d-b284-4925-a575-0f621fb3c6a7",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3324,10 +3324,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"receipts\": [\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"receipts\": [\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      },\n      {\n        \"id\": \"<string>\",\n        \"status\": \"<string>\",\n        \"file\": {\n          \"order\": \"<number>\",\n          \"name\": \"<string>\",\n          \"type\": \"<string>\",\n          \"url\": \"<string>\"\n        }\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "dbf3d85c-817a-49be-8ae9-9e17e68818f8",
+							"id": "4134d09b-6a8f-4db1-ad20-a6ebdb3c301f",
 							"name": "Bookings not found",
 							"originalRequest": {
 								"method": "GET",
@@ -3367,7 +3367,7 @@
 							"cookie": []
 						},
 						{
-							"id": "26cdbfa3-874e-4d37-b75c-697b9bea4951",
+							"id": "81893d9b-91cd-42b8-8bd7-9b24ff232e25",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -3407,9 +3407,429 @@
 							"cookie": []
 						}
 					]
+				},
+				{
+					"name": "addExtraService",
+					"id": "3f0b6dc3-b463-40b0-9679-6de8dd015dab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"changeDate\": \"7677-30-91\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/bookings/extra/add",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"extra",
+								"add"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "9aa3e660-d60b-46ca-9e3a-7f832ea0e092",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"changeDate\": \"7677-30-91\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/extra/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"extra",
+										"add"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "null"
+						},
+						{
+							"id": "c9e025c9-1b0e-4f91-8777-0b757aa74b44",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"changeDate\": \"7677-30-91\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/extra/add",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"extra",
+										"add"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "removeExtraService",
+					"id": "19939df4-9618-43a3-89a3-7da8ae4d6606",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"changeDate\": \"7677-30-91\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/bookings/extra/remove",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"extra",
+								"remove"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "9caf44c7-34db-4987-943b-69fcc95c1f3e",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"changeDate\": \"7677-30-91\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/extra/remove",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"extra",
+										"remove"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "null"
+						},
+						{
+							"id": "c9f953d7-5a89-4044-b3f4-8ca05a2e684e",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"bookingId\": \"<string>\",\n  \"changeDate\": \"7677-30-91\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/extra/remove",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"extra",
+										"remove"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
+				},
+				{
+					"name": "changeRooms",
+					"id": "99c4d11b-6d5c-47f2-bf6a-d5ed4a77f1ca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"society\": \"<string>\",\n  \"changeDate\": \"5118-74-99\",\n  \"bookingId\": \"<string>\",\n  \"changeRoom\": \"<string>\",\n  \"comments\": \"<string>\",\n  \"roomInfo\": {\n    \"subTypeId\": \"<string>\",\n    \"roomNumber\": \"<string>\",\n    \"price\": \"<number>\",\n    \"id\": \"<string>\"\n  },\n  \"discounts\": [\n    {\n      \"id\": \"<string>\",\n      \"price\": \"<number>\",\n      \"idNumber\": \"<string>\",\n      \"identificationType\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"price\": \"<number>\",\n      \"idNumber\": \"<string>\",\n      \"identificationType\": \"<string>\"\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/bookings/rooms",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"bookings",
+								"rooms"
+							]
+						}
+					},
+					"response": [
+						{
+							"id": "3f975c4d-fcf1-49f3-a4bb-ec53adf6804e",
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"society\": \"<string>\",\n  \"changeDate\": \"5118-74-99\",\n  \"bookingId\": \"<string>\",\n  \"changeRoom\": \"<string>\",\n  \"comments\": \"<string>\",\n  \"roomInfo\": {\n    \"subTypeId\": \"<string>\",\n    \"roomNumber\": \"<string>\",\n    \"price\": \"<number>\",\n    \"id\": \"<string>\"\n  },\n  \"discounts\": [\n    {\n      \"id\": \"<string>\",\n      \"price\": \"<number>\",\n      \"idNumber\": \"<string>\",\n      \"identificationType\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"price\": \"<number>\",\n      \"idNumber\": \"<string>\",\n      \"identificationType\": \"<string>\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/rooms",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"rooms"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "null"
+						},
+						{
+							"id": "50d71954-dd70-4245-b220-031f0ed26a0b",
+							"name": "Internal Server Error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"society\": \"<string>\",\n  \"changeDate\": \"5118-74-99\",\n  \"bookingId\": \"<string>\",\n  \"changeRoom\": \"<string>\",\n  \"comments\": \"<string>\",\n  \"roomInfo\": {\n    \"subTypeId\": \"<string>\",\n    \"roomNumber\": \"<string>\",\n    \"price\": \"<number>\",\n    \"id\": \"<string>\"\n  },\n  \"discounts\": [\n    {\n      \"id\": \"<string>\",\n      \"price\": \"<number>\",\n      \"idNumber\": \"<string>\",\n      \"identificationType\": \"<string>\"\n    },\n    {\n      \"id\": \"<string>\",\n      \"price\": \"<number>\",\n      \"idNumber\": \"<string>\",\n      \"identificationType\": \"<string>\"\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/bookings/rooms",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"bookings",
+										"rooms"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"status\": \"<string>\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {}\n}"
+						}
+					]
 				}
 			],
-			"id": "f0e484e8-9bdc-4ec8-aea4-5418339a3230",
+			"id": "3f9f48ff-1dde-429a-9499-631cfa9db261",
 			"description": "<description>"
 		},
 		{
@@ -3417,7 +3837,7 @@
 			"item": [
 				{
 					"name": "requestNewPay",
-					"id": "48ae2807-cf2f-4b8e-8a48-536a73fa0f26",
+					"id": "cfc9696d-03c4-41fb-87e3-da94b0a8f9e5",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3456,7 +3876,7 @@
 					},
 					"response": [
 						{
-							"id": "fe5fda17-3bbe-4619-8d8e-9af90efeb559",
+							"id": "6e9dc2f5-642c-4039-a990-9f0f2292e1d3",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "POST",
@@ -3504,7 +3924,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"signatureVersion\": \"<string>\",\n    \"signature\": \"<string>\",\n    \"merchant\": \"<string>\",\n    \"payId\": \"<string>\"\n  }\n}"
 						},
 						{
-							"id": "c490f448-622f-40ca-9647-35fe3de4c5f8",
+							"id": "e17270c0-4dfa-42f2-9b90-941c2f4b899f",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "POST",
@@ -3555,7 +3975,7 @@
 				},
 				{
 					"name": "return a tpv operation status (ok, ko, pending);",
-					"id": "6e22c403-97b4-4d45-aead-d021ae0068fe",
+					"id": "0276681e-4dd5-4b33-9b7e-4d424841c15b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3592,7 +4012,7 @@
 					},
 					"response": [
 						{
-							"id": "500da0a5-0195-4384-ac91-f4aca45ec509",
+							"id": "cf00e50a-2ac1-4337-9c71-baa005c31c50",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3634,10 +4054,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"paymentStatus\": \"<string>\"\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"paymentStatus\": \"<string>\"\n  }\n}"
 						},
 						{
-							"id": "6993755b-1052-470d-9c69-2830a49f4c11",
+							"id": "fb0e55aa-9ca4-42b7-af5c-b1101ccd9c3e",
 							"name": "Bookings not found",
 							"originalRequest": {
 								"method": "GET",
@@ -3672,7 +4092,7 @@
 							"cookie": []
 						},
 						{
-							"id": "51747826-06eb-4ec8-9885-38bd48187896",
+							"id": "6bb84699-4a94-41f7-9164-14cdaa37a8a8",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -3709,7 +4129,7 @@
 					]
 				}
 			],
-			"id": "63fdbf48-5b93-4008-9f19-6239ed9b5f01",
+			"id": "838d7cdb-548c-4255-bf60-f9c11b124278",
 			"description": "<description>"
 		},
 		{
@@ -3717,7 +4137,7 @@
 			"item": [
 				{
 					"name": "validateZipcode",
-					"id": "8bb2db06-bae6-4078-8700-370de9b40e6f",
+					"id": "bf3932b8-7daa-4120-80c2-5ff235f64128",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3760,7 +4180,7 @@
 					},
 					"response": [
 						{
-							"id": "6c7489c9-590d-40d4-8f97-4aa2bcf1497b",
+							"id": "f19c7237-6e41-4e02-884b-5081adcf65ec",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3813,7 +4233,7 @@
 				},
 				{
 					"name": "Returns all nationalities available",
-					"id": "6429783e-276e-4546-8ae9-ca596b95378a",
+					"id": "26748619-d94a-4ea4-a427-f29e11200404",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3844,7 +4264,7 @@
 					},
 					"response": [
 						{
-							"id": "7fb8ac9d-4264-462d-857a-a9b2b0103358",
+							"id": "0f5148ba-ff3c-4fd5-a0c5-68c8d7b4f279",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3881,10 +4301,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"UK\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"KW\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"JY\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"WC\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "0d155d38-9f87-46c6-8314-c185e60d8c06",
+							"id": "6789fbf3-01cd-427e-b949-88299de55a3d",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -3927,7 +4347,7 @@
 				},
 				{
 					"name": "Returns all countries available",
-					"id": "f4263aa3-f556-43f0-a5da-baa23f39ccd0",
+					"id": "b7b8c59f-2249-432f-84c6-52674c2d36eb",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -3958,7 +4378,7 @@
 					},
 					"response": [
 						{
-							"id": "7862023f-bf32-4872-8218-b8682da0860c",
+							"id": "a829376c-f52b-462e-8a1a-43c66886a4be",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -3995,10 +4415,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"name\": \"SV\",\n        \"id\": \"<string>\"\n      },\n      {\n        \"name\": \"NI\",\n        \"id\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"name\": \"PI\",\n        \"id\": \"<string>\"\n      },\n      {\n        \"name\": \"AE\",\n        \"id\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "0f231357-610e-4265-b3ba-2b5345534622",
+							"id": "f352d288-0e70-4169-9d1b-acafacd9b8b0",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4041,7 +4461,7 @@
 				},
 				{
 					"name": "Returns all regions available",
-					"id": "486e8b9c-581f-49e9-9be3-52aa5d07739e",
+					"id": "f7cb4fda-9311-439d-b71c-33e3f529744d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4072,14 +4492,14 @@
 							"variable": [
 								{
 									"key": "countryname",
-									"value": "EA"
+									"value": "PX"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "73010caa-767e-4074-9a45-c6124c5156db",
+							"id": "5945a1c0-0ff3-4eb6-b167-eed2615858e4",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4125,7 +4545,7 @@
 							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "64b92204-c47f-426d-8808-fa797d2976e7",
+							"id": "2e86d014-9959-48f7-8b2a-f1ec176d6977",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4174,7 +4594,7 @@
 				},
 				{
 					"name": "Returns all languages available",
-					"id": "11d37bfa-4270-476c-b441-71622a49bff1",
+					"id": "f2d40453-871f-4ea2-9c81-67d97a0cfa13",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4205,7 +4625,7 @@
 					},
 					"response": [
 						{
-							"id": "55fb4f9b-b966-4651-839b-b6d488e6c629",
+							"id": "2e58668b-2d0d-4f85-a521-19438d0853e1",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4242,10 +4662,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"MX\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"NI\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"CC\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"FH\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "e1f3d121-e898-4936-8616-3c5d4dc02a9e",
+							"id": "19faf787-cc72-47fe-b342-7989ae65f1f8",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4278,7 +4698,7 @@
 				},
 				{
 					"name": "Returns all university degrees available",
-					"id": "be5e093a-04f9-4370-92e3-9346a772b541",
+					"id": "ea9c4ac3-f9b8-47d0-b63d-2dc5c35c899d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4309,7 +4729,7 @@
 					},
 					"response": [
 						{
-							"id": "fce82afe-707b-4ce7-8d31-10cccd66d702",
+							"id": "4740d895-7168-428f-a591-04ccd7fb49a3",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4349,7 +4769,7 @@
 							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "c1c25925-33cd-42fc-bbbc-1524c1052234",
+							"id": "220fb6f5-a23b-42ba-846d-ef81a040847b",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4392,7 +4812,7 @@
 				},
 				{
 					"name": "Returns all identification profiles available",
-					"id": "59c7573d-1152-4375-938b-e209bb5a3fa2",
+					"id": "20581212-b9eb-4413-91e2-c7dbfaf2c019",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4423,7 +4843,7 @@
 					},
 					"response": [
 						{
-							"id": "45b5c1d7-4fab-4dc5-b43f-ed1d5b468681",
+							"id": "ecb35837-c25a-4645-ac8b-a21e6c64f4c8",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4460,10 +4880,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "a1214173-c5f7-4b83-90ae-ccd3fdcfc913",
+							"id": "fc9bbd24-9517-4757-a644-dbfcdeafb1cb",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4506,7 +4926,7 @@
 				},
 				{
 					"name": "Returns all universities available",
-					"id": "3e8a1280-b560-4587-bd8d-587be4594625",
+					"id": "fdcb6fe0-d3ee-41c0-a2bd-7aaed2f25516",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4537,7 +4957,7 @@
 					},
 					"response": [
 						{
-							"id": "f67d3894-3a89-4506-b629-5f1558b7195c",
+							"id": "e79bf148-aa0c-44e1-b1bd-7d0fefcefada",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4577,7 +4997,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "0a9ca59b-ca8f-43e7-ad8a-252184ed0be7",
+							"id": "085ee9f1-b74b-455c-85bb-808904cf5b37",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4620,7 +5040,7 @@
 				},
 				{
 					"name": "Returns all genders available",
-					"id": "7034ea29-4682-4290-a8f3-0232ca3013f5",
+					"id": "2cebd0b7-d1b9-4b02-bb03-865bc1d6b388",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4651,7 +5071,7 @@
 					},
 					"response": [
 						{
-							"id": "64abf6da-1c50-4dd7-ac53-1d1a2c7a2a36",
+							"id": "56336f2a-6238-46d9-a4c3-d9c4908d8386",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4691,7 +5111,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "1da24171-4061-495a-8e59-9e3bf65df656",
+							"id": "746440dc-c91b-46fa-ae00-f456ecec7456",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4734,7 +5154,7 @@
 				},
 				{
 					"name": "Returns all occupations available",
-					"id": "7f7b94b7-0589-4648-9b6a-e465554261ee",
+					"id": "9804cde6-0303-416b-b5cc-4abbf11008f8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4765,7 +5185,7 @@
 					},
 					"response": [
 						{
-							"id": "58cac201-822c-427a-926a-ba53ba877903",
+							"id": "72a88dbb-e017-403c-9383-cf99a207179e",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4805,7 +5225,7 @@
 							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "dab5f29f-32d2-44f2-a643-0514c77d4c7f",
+							"id": "0348c38f-50d3-4223-b641-9671aab62709",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4848,7 +5268,7 @@
 				},
 				{
 					"name": "Returns all studies available",
-					"id": "e8347a6f-99c2-4302-813e-de9820730243",
+					"id": "da25cca1-a753-4703-aeca-f19fdecff618",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4879,7 +5299,7 @@
 					},
 					"response": [
 						{
-							"id": "89078548-a48b-45e6-bfbb-33f4d5f14a4f",
+							"id": "992a04d5-6dfe-4b9a-a784-1a7e1522e1d3",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -4916,10 +5336,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "020097e5-139b-4587-8212-8a9510b3417d",
+							"id": "1bdda5df-318a-4096-b786-6eacf58c55d3",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -4962,7 +5382,7 @@
 				},
 				{
 					"name": "Returns all stay reasons available",
-					"id": "7f80d003-cf4e-47ad-b69b-d1367e2e723a",
+					"id": "640986c4-4d78-4808-a79f-2bf5d81464a9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -4993,7 +5413,7 @@
 					},
 					"response": [
 						{
-							"id": "c21c8b0e-2c86-4002-8e96-cf2198081860",
+							"id": "573b2687-c85f-44df-8847-c0b3845c09dd",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -5030,10 +5450,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "51a3d3ef-60ac-4460-be24-b203d78a0988",
+							"id": "25879c23-c70c-44ed-82d8-65900f66ab12",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -5076,7 +5496,7 @@
 				},
 				{
 					"name": "Returns all family relations available",
-					"id": "eb9bdbea-bdc5-4d75-a078-184fcc0a84c4",
+					"id": "9f4f9c72-a6fd-4cdf-a050-5b0ed28fc398",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5107,7 +5527,7 @@
 					},
 					"response": [
 						{
-							"id": "2c2d61b7-b60d-4264-85b1-1f72fb1891df",
+							"id": "890caf82-c334-4795-a60e-e0bfeb76d3cc",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -5144,10 +5564,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"slug\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "1112b696-db28-421a-ae4f-344ee7ce08fd",
+							"id": "2ebaf7c2-3316-41cf-9fb3-2ee2fb07d128",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -5190,7 +5610,7 @@
 				},
 				{
 					"name": "Returns all cities",
-					"id": "654dda43-114e-4b0f-9b9b-64e165ff8a92",
+					"id": "b756e4cf-1772-457a-ae30-c311dfb8dc70",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5221,14 +5641,14 @@
 							"variable": [
 								{
 									"key": "regionId",
-									"value": "44"
+									"value": "74"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "a3d74e1b-775b-4bc7-843b-73f6adccd97b",
+							"id": "130c0608-a9ee-4fd0-a2ed-3369712f65e3",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -5271,10 +5691,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "4fc33542-7aef-456a-9141-0d0e0e79e084",
+							"id": "c25474c4-8828-4878-b96c-c03b53c2126c",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -5323,7 +5743,7 @@
 				},
 				{
 					"name": "Returns all schools",
-					"id": "f460a014-5675-4672-8647-cee5e1538765",
+					"id": "281f7671-6245-44c6-910f-e982f6093c25",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5355,18 +5775,18 @@
 							"variable": [
 								{
 									"key": "regionId",
-									"value": "44"
+									"value": "74"
 								},
 								{
 									"key": "cityId",
-									"value": "1289"
+									"value": "8335"
 								}
 							]
 						}
 					},
 					"response": [
 						{
-							"id": "0977aca0-1c99-4ff5-bc1d-87f6f14b7e82",
+							"id": "d2feeccd-0450-4e55-98a7-c20c447436bc",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -5416,7 +5836,7 @@
 							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "4b8fa4fa-9694-412d-a93e-bd2371bdba90",
+							"id": "e72f2fcf-7c68-48bf-be08-e621cf5919d1",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -5469,7 +5889,7 @@
 				},
 				{
 					"name": "Returns all incidence types",
-					"id": "9f354024-b439-458c-8224-d19a124b582e",
+					"id": "e73427f5-d775-4341-bb9c-4ee911d78c22",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -5500,7 +5920,7 @@
 					},
 					"response": [
 						{
-							"id": "e07233e9-3a79-4916-9900-f48ad788b0d5",
+							"id": "4972cf1b-2fef-4ef5-abe8-4faa7bc8dbe6",
 							"name": "Successful operation",
 							"originalRequest": {
 								"method": "GET",
@@ -5537,10 +5957,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n  \"status\": \"error\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
+							"body": "{\n  \"status\": \"success\",\n  \"timestamp\": \"<string>\",\n  \"error_details\": \"<string>\",\n  \"error_message\": \"<string>\",\n  \"result\": {\n    \"data\": [\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      },\n      {\n        \"id\": \"<string>\",\n        \"name\": \"<string>\"\n      }\n    ]\n  }\n}"
 						},
 						{
-							"id": "8ce8c839-e5c8-44ed-89a1-24dd9ea0716c",
+							"id": "2020b34b-3907-4c6a-bdb1-b1e7656597ee",
 							"name": "Internal Server Error",
 							"originalRequest": {
 								"method": "GET",
@@ -5582,13 +6002,13 @@
 					]
 				}
 			],
-			"id": "cf9d85d8-fce9-455c-8501-892ca1ad6abc",
+			"id": "83efb68c-35d6-4ca5-926f-b5c4b53ffa35",
 			"description": "<description>"
 		}
 	],
 	"variable": [
 		{
-			"id": "049035e4-5758-468c-9fd6-ac7624a6fbba",
+			"id": "e5ad854a-6277-400d-8333-c57d635c1028",
 			"key": "baseUrl",
 			"value": "https://resa-pre-backend.azurewebsites.net/api/v1"
 		}
