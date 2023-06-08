@@ -994,6 +994,87 @@ paths:
                     description: Internal Server Error
             operationId: findReceipts
             summary: Return receipts
+            
+    '/bookings/extra/add':
+        post:
+            requestBody:
+                $ref: '#/components/requestBodies/ExtraServiceRequest'
+            tags:
+                - bookings
+            responses:
+                '200':
+                    content:
+                        application/json:
+                            schema:
+                              allOf:
+                                - $ref: '#/components/schemas/Response'
+                                - properties:
+                                    result:
+                                      $ref: ''
+                    description: Successful operation
+                '500':
+                    description: Internal Server Error
+                    content:
+                        application/json:
+                            schema:
+                              allOf:
+                                - $ref: '#/components/schemas/Response500'
+            operationId: addExtraService
+            summary: addExtraService
+
+    '/bookings/extra/remove':
+        post:
+            requestBody:
+                $ref: '#/components/requestBodies/ExtraServiceRequest'
+            tags:
+                - bookings
+            responses:
+                '200':
+                    content:
+                        application/json:
+                            schema:
+                              allOf:
+                                - $ref: '#/components/schemas/Response'
+                                - properties:
+                                    result:
+                                      $ref: ''
+                    description: Successful operation
+                '500':
+                    description: Internal Server Error
+                    content:
+                        application/json:
+                            schema:
+                              allOf:
+                                - $ref: '#/components/schemas/Response500'
+            operationId: removeExtraService
+            summary: removeExtraService
+
+    '/bookings/rooms':
+        post:
+            requestBody:
+                $ref: '#/components/requestBodies/ChangeRoomServiceRequest'
+            tags:
+                - bookings
+            responses:
+                '200':
+                    content:
+                        application/json:
+                            schema:
+                              allOf:
+                                - $ref: '#/components/schemas/Response'
+                                - properties:
+                                    result:
+                                      $ref: ''
+                    description: Successful operation
+                '500':
+                    description: Internal Server Error
+                    content:
+                        application/json:
+                            schema:
+                              allOf:
+                                - $ref: '#/components/schemas/Response500'
+            operationId: bookingRoomsService
+            summary: changeRooms
     
     '/documents/find/{bookingId}/{residenceId}':
       get:
@@ -6967,6 +7048,32 @@ components:
                 promoCodes:
                     type: array
                     items: {}
+
+        BookingRoomData:
+            type: object
+            properties:
+                subTypeId:
+                    type: string
+                roomNumber:
+                    type: string
+                price:
+                    type: number
+                    example: 200.0
+                id:
+                    type: string
+
+        BookingDiscountData:
+            type: object
+            properties:
+                id:
+                    type: string
+                price:
+                    type: number
+                    example: 200.0
+                idNumber:
+                    type: string
+                identificationType:
+                    type: string
     
         Response:
           description: Default API response
@@ -7086,6 +7193,49 @@ components:
                             bookingId:
                                 type: string
                                 example: 0000301000809
+            required: true
+        ExtraServiceRequest:
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        properties:
+                            id:
+                              type: string
+                              example: 'SER0027'
+                            bookingId:
+                              type: string
+                              example: '0000111080291'
+                            changeDate:
+                              type: string
+                              pattern: ([0-9]{4})-(?:[0-9]{2})-([0-9]{2})
+                              example: "2024-07-15"
+                              
+        ChangeRoomServiceRequest:
+            content:
+                application/json:
+                    schema:
+                        type: object
+                        properties:
+                            society:
+                                type: string
+                            changeDate:
+                                type: string
+                                pattern: ([0-9]{4})-(?:[0-9]{2})-([0-9]{2})
+                                example: "2024-07-15"
+                            bookingId:
+                                type: string
+                            changeRoom:
+                                type: string
+                            comments:
+                                type: string
+                            roomInfo:
+                                $ref: '#/components/schemas/BookingRoomData'
+                            discounts:
+                                type: array
+                                items:
+                                  $ref: '#/components/schemas/BookingDiscountData'
+                                
             required: true
 tags:
     -
