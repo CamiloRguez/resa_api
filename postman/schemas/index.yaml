@@ -824,6 +824,13 @@ paths:
                 $ref: '#/components/requestBodies/CreateBookingRequest'
             tags:
                 - bookings
+            parameters:
+              - name: Accept-Language
+                in: header
+                required: true
+                schema:
+                  type: string
+                  example: es-ES
             responses:
                 '200':
                     content:
